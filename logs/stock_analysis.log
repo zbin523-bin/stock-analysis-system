@@ -1,0 +1,40 @@
+2025-09-12 17:54:51,750 - INFO - 生产环境股票分析系统初始化完成
+2025-09-12 17:54:51,750 - INFO - 运行单次分析...
+2025-09-12 17:54:51,750 - INFO - 开始分析 - 2025-09-12 17:54:51.750903
+2025-09-12 17:54:51,750 - INFO - 开始分析投资组合...
+2025-09-12 17:54:53,202 - ERROR - 获取 00700.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/00700.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:53,202 - WARNING - 无法获取 腾讯控股 的价格，使用上次价格
+2025-09-12 17:54:53,493 - ERROR - 获取 00981.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/00981.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:53,493 - WARNING - 无法获取 中芯国际 的价格，使用上次价格
+2025-09-12 17:54:53,782 - ERROR - 获取 01810.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/01810.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:53,782 - WARNING - 无法获取 小米集团-W 的价格，使用上次价格
+2025-09-12 17:54:54,070 - ERROR - 获取 02628.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/02628.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:54,070 - WARNING - 无法获取 中国人寿 的价格，使用上次价格
+2025-09-12 17:54:54,464 - ERROR - 获取 03690.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/03690.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:54,465 - WARNING - 无法获取 美团-W 的价格，使用上次价格
+2025-09-12 17:54:54,752 - ERROR - 获取 09901.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/09901.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:54,752 - WARNING - 无法获取 新东方-S 的价格，使用上次价格
+2025-09-12 17:54:55,042 - ERROR - 获取 09988.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/09988.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:55,043 - WARNING - 无法获取 阿里巴巴-W 的价格，使用上次价格
+2025-09-12 17:54:55,074 - INFO - 开始分析投资组合...
+2025-09-12 17:54:55,358 - ERROR - 获取 00700.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/00700.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:55,359 - WARNING - 无法获取 腾讯控股 的价格，使用上次价格
+2025-09-12 17:54:55,649 - ERROR - 获取 00981.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/00981.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:55,649 - WARNING - 无法获取 中芯国际 的价格，使用上次价格
+2025-09-12 17:54:55,966 - ERROR - 获取 01810.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/01810.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:55,966 - WARNING - 无法获取 小米集团-W 的价格，使用上次价格
+2025-09-12 17:54:56,355 - ERROR - 获取 02628.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/02628.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:56,355 - WARNING - 无法获取 中国人寿 的价格，使用上次价格
+2025-09-12 17:54:56,646 - ERROR - 获取 03690.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/03690.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:56,646 - WARNING - 无法获取 美团-W 的价格，使用上次价格
+2025-09-12 17:54:56,932 - ERROR - 获取 09901.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/09901.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:56,932 - WARNING - 无法获取 新东方-S 的价格，使用上次价格
+2025-09-12 17:54:57,230 - ERROR - 获取 09988.HK 价格失败: 429 Client Error: Too Many Requests for url: https://query1.finance.yahoo.com/v8/finance/chart/09988.HK?interval=1m&range=1d&includePrePost=true
+2025-09-12 17:54:57,230 - WARNING - 无法获取 阿里巴巴-W 的价格，使用上次价格
+2025-09-12 17:55:01,353 - INFO - 邮件已发送至 zhangbin19850523@163.com
+2025-09-12 17:55:01,354 - INFO - 分析完成，邮件已发送
+2025-09-12 17:55:01,355 - INFO - 定时任务已设置：每天10:00和16:00
+2025-09-12 17:55:01,355 - INFO - 定时调度器启动...
+2025-09-12 17:55:01,356 - INFO - ⏰ 定时任务：每天10:00和16:00
+2025-09-12 17:55:01,356 - INFO - 📧 邮件发送至：zhangbin19850523@163.com
+2025-09-12 17:55:01,356 - INFO - 按 Ctrl+C 停止程序

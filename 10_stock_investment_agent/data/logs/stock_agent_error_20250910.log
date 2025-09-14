@@ -1,0 +1,29 @@
+2025-09-10 19:04:05 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:05:45 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:07:08 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:07:59 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:09:12 | ERROR    | main_agent:_load_config:50 | 加载配置文件失败 settings.json: Expecting property name enclosed in double quotes: line 17 column 29 (char 402)
+2025-09-10 19:09:12 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:09:12 | ERROR    | main_agent:_initialize_agents:92 | 初始化子Agent失败: __init__() got an unexpected keyword argument 'data_fetching_agent'
+2025-09-10 19:09:12 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:10:24 | ERROR    | main_agent:_load_config:50 | 加载配置文件失败 settings.json: Expecting property name enclosed in double quotes: line 17 column 29 (char 402)
+2025-09-10 19:10:24 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:10:24 | ERROR    | main_agent:_initialize_agents:92 | 初始化子Agent失败: __init__() got an unexpected keyword argument 'data_fetching_agent'
+2025-09-10 19:10:24 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:11:16 | ERROR    | main_agent:_load_config:50 | 加载配置文件失败 settings.json: Expecting ',' delimiter: line 25 column 33 (char 600)
+2025-09-10 19:11:16 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:11:16 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:11:47 | ERROR    | main_agent:_load_config:50 | 加载配置文件失败 settings.json: Expecting property name enclosed in double quotes: line 49 column 37 (char 1083)
+2025-09-10 19:11:47 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:11:47 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:12:00 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:12:00 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:12:33 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 20:58:06 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 20:58:14 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 20:58:14 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 21:17:07 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 21:53:39 | ERROR    | agents.feishu_integration:get_access_token:71 | 获取访问令牌失败: 404
+2025-09-10 21:53:39 | ERROR    | agents.feishu_integration:get_access_token:72 | 响应内容: 404 page not found
+2025-09-10 21:54:36 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 21:55:26 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined

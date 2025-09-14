@@ -1,0 +1,17 @@
+{
+  "auto_analyze": true,
+  "auto_watch": true,
+  "default_model": "Qwen/Qwen2.5-VL-72B-Instruct",
+  "analysis_types": {
+    "wechat": true,
+    "table": true,
+    "general": true,
+    "weather": true
+  },
+  "output_formats": [
+    "json",
+    "txt"
+  ],
+  "save_history": true,
+  "max_history_size": 100
+}

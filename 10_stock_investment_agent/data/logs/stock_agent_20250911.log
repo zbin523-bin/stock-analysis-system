@@ -1,0 +1,335 @@
+2025-09-11 10:19:02 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-11 10:19:02 | INFO     | main_agent:_initialize_agents:57 | 开始初始化子Agent...
+2025-09-11 10:19:02 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-11 10:19:02 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 7200, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:19:02 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:19:02 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 10:19:02 | INFO     | main_agent:_initialize_agents:95 | 所有子Agent初始化完成
+2025-09-11 10:19:02 | INFO     | agents.feishu_bitable_agent:create_bitable_app:60 | 开始创建飞书多维表格应用...
+2025-09-11 10:19:04 | INFO     | utils.feishu_bitable_manager:create_app:105 | 飞书应用创建成功: FWEwbrWSVaPZXbsIDtBcnasnnGc
+2025-09-11 10:19:04 | INFO     | agents.feishu_bitable_agent:create_bitable_app:67 | 多维表格应用创建成功: FWEwbrWSVaPZXbsIDtBcnasnnGc
+2025-09-11 10:19:05 | ERROR    | utils.feishu_bitable_manager:create_table:150 | 创建表格失败: WrongRequestBody
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:94 | 表格创建失败: 持仓记录
+2025-09-11 10:19:05 | ERROR    | utils.feishu_bitable_manager:create_table:150 | 创建表格失败: WrongRequestBody
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:94 | 表格创建失败: 买卖记录
+2025-09-11 10:19:05 | ERROR    | utils.feishu_bitable_manager:create_table:150 | 创建表格失败: WrongRequestBody
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:94 | 表格创建失败: 价格历史
+2025-09-11 10:19:05 | ERROR    | utils.feishu_bitable_manager:create_table:150 | 创建表格失败: WrongRequestBody
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:94 | 表格创建失败: 分析结果
+2025-09-11 10:19:05 | INFO     | agents.feishu_bitable_agent:get_share_links:315 | 生成 0 个表格分享链接
+2025-09-11 10:19:05 | INFO     | agents.feishu_bitable_agent:sync_all_data_to_bitable:328 | 开始同步所有数据到多维表格...
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:sync_position_to_bitable:135 | 持仓数据同步失败: Table positions not found
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:sync_trade_to_bitable:167 | 交易数据同步失败: Table trades not found
+2025-09-11 10:19:05 | INFO     | agents.feishu_bitable_agent:sync_all_data_to_bitable:346 | 数据同步完成: 持仓 0/1, 交易 0/1
+2025-09-11 10:20:32 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-11 10:20:55 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-11 10:20:55 | INFO     | __main__:_initialize_agents:57 | 开始初始化子Agent...
+2025-09-11 10:20:55 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-11 10:20:55 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 7087, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:20:55 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:20:55 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 10:20:55 | INFO     | __main__:_initialize_agents:95 | 所有子Agent初始化完成
+2025-09-11 10:21:06 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 7076, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:21:06 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:21:06 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 10:21:06 | INFO     | __main__:main:37 | 开始测试创建应用和表格...
+2025-09-11 10:21:06 | INFO     | agents.feishu_bitable_agent:create_bitable_app:60 | 开始创建飞书多维表格应用...
+2025-09-11 10:21:08 | INFO     | utils.feishu_bitable_manager:create_app:105 | 飞书应用创建成功: SyMRbEN9EaocQVsfgH1ceMQNncg
+2025-09-11 10:21:08 | INFO     | agents.feishu_bitable_agent:create_bitable_app:67 | 多维表格应用创建成功: SyMRbEN9EaocQVsfgH1ceMQNncg
+2025-09-11 10:21:08 | INFO     | utils.feishu_bitable_manager:create_table:156 | 创建表格请求: {"table": {"name": "持仓记录", "default_view_name": "表格视图"}, "fields": [{"field_name": "symbol", "type": "text", "ui_schema": {"title": "股票代码"}}, {"field_name": "name", "type": "text", "ui_schema": {"title": "股票名称"}}, {"field_name": "market_type", "type": "singleSelect", "ui_schema": {"title": "市场类型"}}, {"field_name": "buy_price", "type": "currency", "ui_schema": {"title": "买入价格"}}, {"field_name": "current_price", "type": "currency", "ui_schema": {"title": "当前价格"}}, {"field_name": "quantity", "type": "number", "ui_schema": {"title": "持有数量"}}, {"field_name": "buy_date", "type": "date", "ui_schema": {"title": "买入日期"}}, {"field_name": "total_cost", "type": "currency", "ui_schema": {"title": "总成本"}}, {"field_name": "current_value", "type": "currency", "ui_schema": {"title": "当前市值"}}, {"field_name": "profit_loss", "type": "currency", "ui_schema": {"title": "盈亏金额"}}, {"field_name": "profit_loss_percent", "type": "percent", "ui_schema": {"title": "盈亏比例"}}, {"field_name": "notes", "type": "text", "ui_schema": {"title": "备注"}}]}
+2025-09-11 10:21:08 | INFO     | utils.feishu_bitable_manager:create_table:162 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102108356C45DA0B07CE59504A", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102108356C45DA0B07CE59504A&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:08 | ERROR    | utils.feishu_bitable_manager:create_table:170 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:08 | ERROR    | utils.feishu_bitable_manager:create_table:171 | 错误代码: 1254001
+2025-09-11 10:21:08 | ERROR    | utils.feishu_bitable_manager:create_table:172 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102108356C45DA0B07CE59504A", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102108356C45DA0B07CE59504A&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:08 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 持仓记录
+2025-09-11 10:21:08 | INFO     | utils.feishu_bitable_manager:create_table:156 | 创建表格请求: {"table": {"name": "买卖记录", "default_view_name": "表格视图"}, "fields": [{"field_name": "symbol", "type": "text", "ui_schema": {"title": "股票代码"}}, {"field_name": "name", "type": "text", "ui_schema": {"title": "股票名称"}}, {"field_name": "trade_type", "type": "singleSelect", "ui_schema": {"title": "交易类型"}}, {"field_name": "price", "type": "currency", "ui_schema": {"title": "交易价格"}}, {"field_name": "quantity", "type": "number", "ui_schema": {"title": "交易数量"}}, {"field_name": "amount", "type": "currency", "ui_schema": {"title": "交易金额"}}, {"field_name": "trade_date", "type": "date", "ui_schema": {"title": "交易日期"}}, {"field_name": "notes", "type": "text", "ui_schema": {"title": "备注"}}]}
+2025-09-11 10:21:09 | INFO     | utils.feishu_bitable_manager:create_table:162 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102108054866C9FC819EECBA5B", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102108054866C9FC819EECBA5B&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:170 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:171 | 错误代码: 1254001
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:172 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102108054866C9FC819EECBA5B", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102108054866C9FC819EECBA5B&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:09 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 买卖记录
+2025-09-11 10:21:09 | INFO     | utils.feishu_bitable_manager:create_table:156 | 创建表格请求: {"table": {"name": "价格历史", "default_view_name": "表格视图"}, "fields": [{"field_name": "symbol", "type": "text", "ui_schema": {"title": "股票代码"}}, {"field_name": "price", "type": "currency", "ui_schema": {"title": "价格"}}, {"field_name": "timestamp", "type": "datetime", "ui_schema": {"title": "时间戳"}}, {"field_name": "change_percent", "type": "percent", "ui_schema": {"title": "涨跌幅"}}]}
+2025-09-11 10:21:09 | INFO     | utils.feishu_bitable_manager:create_table:162 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111021093C58F292A51317DE6E5F", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111021093C58F292A51317DE6E5F&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:170 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:171 | 错误代码: 1254001
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:172 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111021093C58F292A51317DE6E5F", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111021093C58F292A51317DE6E5F&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:09 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 价格历史
+2025-09-11 10:21:09 | INFO     | utils.feishu_bitable_manager:create_table:156 | 创建表格请求: {"table": {"name": "分析结果", "default_view_name": "表格视图"}, "fields": [{"field_name": "symbol", "type": "text", "ui_schema": {"title": "股票代码"}}, {"field_name": "analysis_type", "type": "singleSelect", "ui_schema": {"title": "分析类型"}}, {"field_name": "recommendation", "type": "singleSelect", "ui_schema": {"title": "投资建议"}}, {"field_name": "confidence", "type": "percent", "ui_schema": {"title": "置信度"}}, {"field_name": "analysis_date", "type": "datetime", "ui_schema": {"title": "分析时间"}}, {"field_name": "notes", "type": "text", "ui_schema": {"title": "分析说明"}}]}
+2025-09-11 10:21:09 | INFO     | utils.feishu_bitable_manager:create_table:162 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111021090CF92CEC16620ACD3370", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111021090CF92CEC16620ACD3370&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:170 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:171 | 错误代码: 1254001
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:172 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111021090CF92CEC16620ACD3370", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111021090CF92CEC16620ACD3370&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:09 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 分析结果
+2025-09-11 10:21:09 | INFO     | __main__:main:42 | ✅ 多维表格应用和表格创建成功
+2025-09-11 10:21:09 | INFO     | __main__:main:43 | App Token: SyMRbEN9EaocQVsfgH1ceMQNncg
+2025-09-11 10:21:09 | INFO     | __main__:main:44 | 创建的表格: []
+2025-09-11 10:21:49 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 7032, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:21:49 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:21:49 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 10:21:49 | INFO     | __main__:main:37 | 开始测试创建应用和表格...
+2025-09-11 10:21:49 | INFO     | agents.feishu_bitable_agent:create_bitable_app:60 | 开始创建飞书多维表格应用...
+2025-09-11 10:21:51 | INFO     | utils.feishu_bitable_manager:create_app:105 | 飞书应用创建成功: AsHJbyzyQaDIELsniZQcWT5hn5D
+2025-09-11 10:21:51 | INFO     | agents.feishu_bitable_agent:create_bitable_app:67 | 多维表格应用创建成功: AsHJbyzyQaDIELsniZQcWT5hn5D
+2025-09-11 10:21:51 | INFO     | utils.feishu_bitable_manager:create_table:149 | 创建表格请求: {"table": {"name": "持仓记录", "default_view_name": "表格视图"}, "fields": [{"field_name": "symbol", "type": "text"}, {"field_name": "name", "type": "text"}, {"field_name": "market_type", "type": "text"}, {"field_name": "buy_price", "type": "text"}, {"field_name": "current_price", "type": "text"}, {"field_name": "quantity", "type": "text"}, {"field_name": "buy_date", "type": "text"}, {"field_name": "total_cost", "type": "text"}, {"field_name": "current_value", "type": "text"}, {"field_name": "profit_loss", "type": "text"}, {"field_name": "profit_loss_percent", "type": "text"}, {"field_name": "notes", "type": "text"}]}
+2025-09-11 10:21:52 | INFO     | utils.feishu_bitable_manager:create_table:155 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102152BF0DFC488AAD09C29A02", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102152BF0DFC488AAD09C29A02&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:163 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 错误代码: 1254001
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102152BF0DFC488AAD09C29A02", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102152BF0DFC488AAD09C29A02&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:52 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 持仓记录
+2025-09-11 10:21:52 | INFO     | utils.feishu_bitable_manager:create_table:149 | 创建表格请求: {"table": {"name": "买卖记录", "default_view_name": "表格视图"}, "fields": [{"field_name": "symbol", "type": "text"}, {"field_name": "name", "type": "text"}, {"field_name": "trade_type", "type": "text"}, {"field_name": "price", "type": "text"}, {"field_name": "quantity", "type": "text"}, {"field_name": "amount", "type": "text"}, {"field_name": "trade_date", "type": "text"}, {"field_name": "notes", "type": "text"}]}
+2025-09-11 10:21:52 | INFO     | utils.feishu_bitable_manager:create_table:155 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111021523EE21AF3525586C1373B", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111021523EE21AF3525586C1373B&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:163 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 错误代码: 1254001
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111021523EE21AF3525586C1373B", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111021523EE21AF3525586C1373B&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:52 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 买卖记录
+2025-09-11 10:21:52 | INFO     | utils.feishu_bitable_manager:create_table:149 | 创建表格请求: {"table": {"name": "价格历史", "default_view_name": "表格视图"}, "fields": [{"field_name": "symbol", "type": "text"}, {"field_name": "price", "type": "text"}, {"field_name": "timestamp", "type": "text"}, {"field_name": "change_percent", "type": "text"}]}
+2025-09-11 10:21:52 | INFO     | utils.feishu_bitable_manager:create_table:155 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102152ED89AA57333FE76A323F", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102152ED89AA57333FE76A323F&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:163 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 错误代码: 1254001
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102152ED89AA57333FE76A323F", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102152ED89AA57333FE76A323F&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:52 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 价格历史
+2025-09-11 10:21:52 | INFO     | utils.feishu_bitable_manager:create_table:149 | 创建表格请求: {"table": {"name": "分析结果", "default_view_name": "表格视图"}, "fields": [{"field_name": "symbol", "type": "text"}, {"field_name": "analysis_type", "type": "text"}, {"field_name": "recommendation", "type": "text"}, {"field_name": "confidence", "type": "text"}, {"field_name": "analysis_date", "type": "text"}, {"field_name": "notes", "type": "text"}]}
+2025-09-11 10:21:53 | INFO     | utils.feishu_bitable_manager:create_table:155 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102153A7E790FE2DD1C488EAB9", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102153A7E790FE2DD1C488EAB9&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:53 | ERROR    | utils.feishu_bitable_manager:create_table:163 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:53 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 错误代码: 1254001
+2025-09-11 10:21:53 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102153A7E790FE2DD1C488EAB9", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102153A7E790FE2DD1C488EAB9&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:53 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 分析结果
+2025-09-11 10:21:53 | INFO     | __main__:main:42 | ✅ 多维表格应用和表格创建成功
+2025-09-11 10:21:53 | INFO     | __main__:main:43 | App Token: AsHJbyzyQaDIELsniZQcWT5hn5D
+2025-09-11 10:21:53 | INFO     | __main__:main:44 | 创建的表格: []
+2025-09-11 10:22:26 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 6996, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:22:26 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:22:26 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 10:22:26 | INFO     | __main__:main:37 | 开始测试创建应用和表格...
+2025-09-11 10:22:26 | INFO     | agents.feishu_bitable_agent:create_bitable_app:60 | 开始创建飞书多维表格应用...
+2025-09-11 10:22:28 | INFO     | utils.feishu_bitable_manager:create_app:105 | 飞书应用创建成功: THkZbAu82aqgyhsLX1ocqZWCnif
+2025-09-11 10:22:28 | INFO     | agents.feishu_bitable_agent:create_bitable_app:67 | 多维表格应用创建成功: THkZbAu82aqgyhsLX1ocqZWCnif
+2025-09-11 10:22:28 | INFO     | utils.feishu_bitable_manager:create_table:147 | 创建表格请求: {"name": "持仓记录", "fields": [{"field_name": "symbol", "type": "text"}, {"field_name": "name", "type": "text"}, {"field_name": "market_type", "type": "text"}, {"field_name": "buy_price", "type": "text"}, {"field_name": "current_price", "type": "text"}, {"field_name": "quantity", "type": "text"}, {"field_name": "buy_date", "type": "text"}, {"field_name": "total_cost", "type": "text"}, {"field_name": "current_value", "type": "text"}, {"field_name": "profit_loss", "type": "text"}, {"field_name": "profit_loss_percent", "type": "text"}, {"field_name": "notes", "type": "text"}]}
+2025-09-11 10:22:28 | INFO     | utils.feishu_bitable_manager:create_table:153 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102228943FAD23A962D8E51C09", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102228943FAD23A962D8E51C09&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:28 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 创建表格失败: WrongRequestBody
+2025-09-11 10:22:28 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 错误代码: 1254001
+2025-09-11 10:22:28 | ERROR    | utils.feishu_bitable_manager:create_table:166 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102228943FAD23A962D8E51C09", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102228943FAD23A962D8E51C09&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:28 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 持仓记录
+2025-09-11 10:22:28 | INFO     | utils.feishu_bitable_manager:create_table:147 | 创建表格请求: {"name": "买卖记录", "fields": [{"field_name": "symbol", "type": "text"}, {"field_name": "name", "type": "text"}, {"field_name": "trade_type", "type": "text"}, {"field_name": "price", "type": "text"}, {"field_name": "quantity", "type": "text"}, {"field_name": "amount", "type": "text"}, {"field_name": "trade_date", "type": "text"}, {"field_name": "notes", "type": "text"}]}
+2025-09-11 10:22:31 | INFO     | utils.feishu_bitable_manager:create_table:153 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111022312602E5E2291A0BBD5742", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111022312602E5E2291A0BBD5742&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:31 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 创建表格失败: WrongRequestBody
+2025-09-11 10:22:31 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 错误代码: 1254001
+2025-09-11 10:22:31 | ERROR    | utils.feishu_bitable_manager:create_table:166 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111022312602E5E2291A0BBD5742", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111022312602E5E2291A0BBD5742&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:31 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 买卖记录
+2025-09-11 10:22:31 | INFO     | utils.feishu_bitable_manager:create_table:147 | 创建表格请求: {"name": "价格历史", "fields": [{"field_name": "symbol", "type": "text"}, {"field_name": "price", "type": "text"}, {"field_name": "timestamp", "type": "text"}, {"field_name": "change_percent", "type": "text"}]}
+2025-09-11 10:22:32 | INFO     | utils.feishu_bitable_manager:create_table:153 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "2025091110223277C77614B53017705C97", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025091110223277C77614B53017705C97&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 创建表格失败: WrongRequestBody
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 错误代码: 1254001
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:166 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "2025091110223277C77614B53017705C97", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025091110223277C77614B53017705C97&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:32 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 价格历史
+2025-09-11 10:22:32 | INFO     | utils.feishu_bitable_manager:create_table:147 | 创建表格请求: {"name": "分析结果", "fields": [{"field_name": "symbol", "type": "text"}, {"field_name": "analysis_type", "type": "text"}, {"field_name": "recommendation", "type": "text"}, {"field_name": "confidence", "type": "text"}, {"field_name": "analysis_date", "type": "text"}, {"field_name": "notes", "type": "text"}]}
+2025-09-11 10:22:32 | INFO     | utils.feishu_bitable_manager:create_table:153 | 创建表格响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111022326C51B10EEA9F78599671", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111022326C51B10EEA9F78599671&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 创建表格失败: WrongRequestBody
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 错误代码: 1254001
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:166 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111022326C51B10EEA9F78599671", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111022326C51B10EEA9F78599671&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:32 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 分析结果
+2025-09-11 10:22:32 | INFO     | __main__:main:42 | ✅ 多维表格应用和表格创建成功
+2025-09-11 10:22:32 | INFO     | __main__:main:43 | App Token: THkZbAu82aqgyhsLX1ocqZWCnif
+2025-09-11 10:22:32 | INFO     | __main__:main:44 | 创建的表格: []
+2025-09-11 10:24:02 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 6900, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:24:02 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:24:02 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 10:24:02 | INFO     | __main__:main:37 | 开始测试创建应用和表格...
+2025-09-11 10:24:02 | INFO     | agents.feishu_bitable_agent:create_bitable_app:60 | 开始创建飞书多维表格应用...
+2025-09-11 10:24:04 | INFO     | utils.feishu_bitable_manager:create_app:105 | 飞书应用创建成功: D1WDbD6uYasxjWs5szcctbNWn2b
+2025-09-11 10:24:04 | INFO     | agents.feishu_bitable_agent:create_bitable_app:67 | 多维表格应用创建成功: D1WDbD6uYasxjWs5szcctbNWn2b
+2025-09-11 10:24:04 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 持仓记录 (需要手动创建)
+2025-09-11 10:24:04 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 买卖记录 (需要手动创建)
+2025-09-11 10:24:04 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 价格历史 (需要手动创建)
+2025-09-11 10:24:04 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 分析结果 (需要手动创建)
+2025-09-11 10:24:04 | INFO     | __main__:main:42 | ✅ 多维表格应用和表格创建成功
+2025-09-11 10:24:04 | INFO     | __main__:main:43 | App Token: D1WDbD6uYasxjWs5szcctbNWn2b
+2025-09-11 10:24:04 | INFO     | __main__:main:44 | 创建的表格: ['positions', 'trades', 'price_history', 'analysis']
+2025-09-11 10:24:04 | INFO     | __main__:main:48 |   表格 positions: 持仓记录 (tbl_positions_5596)
+2025-09-11 10:24:04 | INFO     | __main__:main:48 |   表格 trades: 买卖记录 (tbl_trades_5552)
+2025-09-11 10:24:04 | INFO     | __main__:main:48 |   表格 price_history: 价格历史 (tbl_price_history_67)
+2025-09-11 10:24:04 | INFO     | __main__:main:48 |   表格 analysis: 分析结果 (tbl_analysis_9008)
+2025-09-11 10:24:18 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 6883, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:24:18 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:24:18 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 10:24:18 | INFO     | __main__:main:37 | === 步骤1: 创建应用和表格配置 ===
+2025-09-11 10:24:18 | INFO     | agents.feishu_bitable_agent:create_bitable_app:60 | 开始创建飞书多维表格应用...
+2025-09-11 10:24:20 | INFO     | utils.feishu_bitable_manager:create_app:105 | 飞书应用创建成功: I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:20 | INFO     | agents.feishu_bitable_agent:create_bitable_app:67 | 多维表格应用创建成功: I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:20 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 持仓记录 (需要手动创建)
+2025-09-11 10:24:20 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 买卖记录 (需要手动创建)
+2025-09-11 10:24:20 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 价格历史 (需要手动创建)
+2025-09-11 10:24:20 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 分析结果 (需要手动创建)
+2025-09-11 10:24:20 | INFO     | __main__:main:41 | ✅ 飞书应用创建成功
+2025-09-11 10:24:20 | INFO     | __main__:main:42 | App Token: I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:20 | INFO     | __main__:main:43 | 配置的表格: ['positions', 'trades', 'price_history', 'analysis']
+2025-09-11 10:24:20 | INFO     | __main__:main:49 | === 步骤2: 测试数据同步 ===
+2025-09-11 10:24:20 | INFO     | agents.feishu_bitable_agent:sync_position_to_bitable:123 | 持仓数据准备同步: AAPL
+2025-09-11 10:24:20 | INFO     | agents.feishu_bitable_agent:sync_position_to_bitable:124 | 数据内容: {'symbol': 'AAPL', 'name': 'Apple Inc.', 'market_type': 'US', 'buy_price': 150.0, 'current_price': 175.5, 'quantity': 100, 'buy_date': '2024-01-15', 'total_cost': 15000.0, 'current_value': 17550.0, 'profit_loss': 2550.0, 'profit_loss_percent': 17.0, 'notes': '长期持有'}
+2025-09-11 10:24:20 | INFO     | agents.feishu_bitable_agent:_save_to_local_file:357 | 数据已保存到本地文件: data/feishu_sync/positions_data.json
+2025-09-11 10:24:20 | INFO     | __main__:main:68 | 持仓同步结果: {'success': True, 'message': '持仓数据已保存到本地，等待飞书表格创建完成后同步', 'local_saved': True, 'symbol': 'AAPL'}
+2025-09-11 10:24:20 | INFO     | __main__:main:71 | === 步骤3: 生成分享链接 ===
+2025-09-11 10:24:20 | INFO     | agents.feishu_bitable_agent:get_share_links:318 | 生成 4 个应用链接
+2025-09-11 10:24:20 | INFO     | __main__:main:75 | 表格 positions: 持仓记录
+2025-09-11 10:24:20 | INFO     | __main__:main:76 |   应用链接: https://open.feishu.cn/open-apis/bitable/v1/apps/I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:20 | INFO     | __main__:main:77 |   说明: 表格需要手动创建，创建后可获得分享链接
+2025-09-11 10:24:20 | INFO     | __main__:main:75 | 表格 trades: 买卖记录
+2025-09-11 10:24:20 | INFO     | __main__:main:76 |   应用链接: https://open.feishu.cn/open-apis/bitable/v1/apps/I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:20 | INFO     | __main__:main:77 |   说明: 表格需要手动创建，创建后可获得分享链接
+2025-09-11 10:24:20 | INFO     | __main__:main:75 | 表格 price_history: 价格历史
+2025-09-11 10:24:20 | INFO     | __main__:main:76 |   应用链接: https://open.feishu.cn/open-apis/bitable/v1/apps/I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:20 | INFO     | __main__:main:77 |   说明: 表格需要手动创建，创建后可获得分享链接
+2025-09-11 10:24:20 | INFO     | __main__:main:75 | 表格 analysis: 分析结果
+2025-09-11 10:24:20 | INFO     | __main__:main:76 |   应用链接: https://open.feishu.cn/open-apis/bitable/v1/apps/I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:20 | INFO     | __main__:main:77 |   说明: 表格需要手动创建，创建后可获得分享链接
+2025-09-11 10:24:20 | INFO     | __main__:main:80 | === 步骤4: 导出CSV文件 ===
+2025-09-11 10:24:21 | INFO     | agents.feishu_bitable_agent:export_data_to_csv:410 | 导出 4 个CSV文件
+2025-09-11 10:24:21 | INFO     | __main__:main:84 | 表格 positions: 持仓记录
+2025-09-11 10:24:21 | INFO     | __main__:main:85 |   CSV文件: data/feishu_export/持仓记录.csv
+2025-09-11 10:24:21 | INFO     | __main__:main:86 |   记录数: 1
+2025-09-11 10:24:21 | INFO     | __main__:main:84 | 表格 trades: 买卖记录
+2025-09-11 10:24:21 | INFO     | __main__:main:85 |   CSV文件: data/feishu_export/买卖记录.csv
+2025-09-11 10:24:21 | INFO     | __main__:main:86 |   记录数: 0
+2025-09-11 10:24:21 | INFO     | __main__:main:84 | 表格 price_history: 价格历史
+2025-09-11 10:24:21 | INFO     | __main__:main:85 |   CSV文件: data/feishu_export/价格历史.csv
+2025-09-11 10:24:21 | INFO     | __main__:main:86 |   记录数: 0
+2025-09-11 10:24:21 | INFO     | __main__:main:84 | 表格 analysis: 分析结果
+2025-09-11 10:24:21 | INFO     | __main__:main:85 |   CSV文件: data/feishu_export/分析结果.csv
+2025-09-11 10:24:21 | INFO     | __main__:main:86 |   记录数: 0
+2025-09-11 10:24:21 | INFO     | __main__:main:89 | === 步骤5: 完整解决方案说明 ===
+2025-09-11 10:24:21 | INFO     | __main__:main:90 | ✅ 飞书应用已创建成功
+2025-09-11 10:24:21 | INFO     | __main__:main:91 | ✅ 数据同步系统已配置完成
+2025-09-11 10:24:21 | INFO     | __main__:main:92 | ✅ 本地数据存储已建立
+2025-09-11 10:24:21 | INFO     | __main__:main:93 | ✅ CSV导出功能已准备就绪
+2025-09-11 10:24:21 | INFO     | __main__:main:95 | 
+📋 用户操作指南:
+2025-09-11 10:24:21 | INFO     | __main__:main:96 | 1. 访问飞书应用链接，手动创建4个表格
+2025-09-11 10:24:21 | INFO     | __main__:main:97 | 2. 使用data/feishu_export/目录中的CSV文件导入数据
+2025-09-11 10:24:21 | INFO     | __main__:main:98 | 3. 系统会自动同步新的交易记录到本地文件
+2025-09-11 10:24:21 | INFO     | __main__:main:99 | 4. 定期导出CSV文件并更新到飞书表格
+2025-09-11 10:24:21 | INFO     | __main__:main:101 | 
+🔗 飞书应用链接:
+2025-09-11 10:24:21 | INFO     | __main__:main:103 | positions: https://open.feishu.cn/open-apis/bitable/v1/apps/I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:21 | INFO     | __main__:main:103 | trades: https://open.feishu.cn/open-apis/bitable/v1/apps/I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:21 | INFO     | __main__:main:103 | price_history: https://open.feishu.cn/open-apis/bitable/v1/apps/I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:24:21 | INFO     | __main__:main:103 | analysis: https://open.feishu.cn/open-apis/bitable/v1/apps/I87MbsjTcaIvnpsMjVdc8NZSnHb
+2025-09-11 10:25:28 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 6814, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:25:28 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:25:28 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 10:25:28 | INFO     | __main__:main:37 | === 步骤1: 创建应用和表格配置 ===
+2025-09-11 10:25:28 | INFO     | agents.feishu_bitable_agent:create_bitable_app:60 | 开始创建飞书多维表格应用...
+2025-09-11 10:25:30 | INFO     | utils.feishu_bitable_manager:create_app:105 | 飞书应用创建成功: ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:create_bitable_app:67 | 多维表格应用创建成功: ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 持仓记录 (需要手动创建)
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 买卖记录 (需要手动创建)
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 价格历史 (需要手动创建)
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 分析结果 (需要手动创建)
+2025-09-11 10:25:30 | INFO     | __main__:main:41 | ✅ 飞书应用创建成功
+2025-09-11 10:25:30 | INFO     | __main__:main:42 | App Token: ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | __main__:main:43 | 配置的表格: ['positions', 'trades', 'price_history', 'analysis']
+2025-09-11 10:25:30 | INFO     | __main__:main:49 | === 步骤2: 测试数据同步 ===
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:sync_position_to_bitable:123 | 持仓数据准备同步: AAPL
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:sync_position_to_bitable:124 | 数据内容: {'symbol': 'AAPL', 'name': 'Apple Inc.', 'market_type': 'US', 'buy_price': 150.0, 'current_price': 175.5, 'quantity': 100, 'buy_date': '2024-01-15', 'total_cost': 15000.0, 'current_value': 17550.0, 'profit_loss': 2550.0, 'profit_loss_percent': 17.0, 'notes': '长期持有'}
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:_save_to_local_file:357 | 数据已保存到本地文件: data/feishu_sync/positions_data.json
+2025-09-11 10:25:30 | INFO     | __main__:main:68 | 持仓同步结果: {'success': True, 'message': '持仓数据已保存到本地，等待飞书表格创建完成后同步', 'local_saved': True, 'symbol': 'AAPL'}
+2025-09-11 10:25:30 | INFO     | __main__:main:71 | === 步骤3: 生成分享链接 ===
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:get_share_links:318 | 生成 4 个应用链接
+2025-09-11 10:25:30 | INFO     | __main__:main:75 | 表格 positions: 持仓记录
+2025-09-11 10:25:30 | INFO     | __main__:main:76 |   应用链接: https://open.feishu.cn/open-apis/bitable/v1/apps/ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | __main__:main:77 |   说明: 表格需要手动创建，创建后可获得分享链接
+2025-09-11 10:25:30 | INFO     | __main__:main:75 | 表格 trades: 买卖记录
+2025-09-11 10:25:30 | INFO     | __main__:main:76 |   应用链接: https://open.feishu.cn/open-apis/bitable/v1/apps/ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | __main__:main:77 |   说明: 表格需要手动创建，创建后可获得分享链接
+2025-09-11 10:25:30 | INFO     | __main__:main:75 | 表格 price_history: 价格历史
+2025-09-11 10:25:30 | INFO     | __main__:main:76 |   应用链接: https://open.feishu.cn/open-apis/bitable/v1/apps/ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | __main__:main:77 |   说明: 表格需要手动创建，创建后可获得分享链接
+2025-09-11 10:25:30 | INFO     | __main__:main:75 | 表格 analysis: 分析结果
+2025-09-11 10:25:30 | INFO     | __main__:main:76 |   应用链接: https://open.feishu.cn/open-apis/bitable/v1/apps/ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | __main__:main:77 |   说明: 表格需要手动创建，创建后可获得分享链接
+2025-09-11 10:25:30 | INFO     | __main__:main:80 | === 步骤4: 导出CSV文件 ===
+2025-09-11 10:25:30 | INFO     | agents.feishu_bitable_agent:export_data_to_csv:410 | 导出 4 个CSV文件
+2025-09-11 10:25:30 | INFO     | __main__:main:84 | 表格 positions: 持仓记录
+2025-09-11 10:25:30 | INFO     | __main__:main:85 |   CSV文件: data/feishu_export/持仓记录.csv
+2025-09-11 10:25:30 | INFO     | __main__:main:86 |   记录数: 2
+2025-09-11 10:25:30 | INFO     | __main__:main:84 | 表格 trades: 买卖记录
+2025-09-11 10:25:30 | INFO     | __main__:main:85 |   CSV文件: data/feishu_export/买卖记录.csv
+2025-09-11 10:25:30 | INFO     | __main__:main:86 |   记录数: 0
+2025-09-11 10:25:30 | INFO     | __main__:main:84 | 表格 price_history: 价格历史
+2025-09-11 10:25:30 | INFO     | __main__:main:85 |   CSV文件: data/feishu_export/价格历史.csv
+2025-09-11 10:25:30 | INFO     | __main__:main:86 |   记录数: 0
+2025-09-11 10:25:30 | INFO     | __main__:main:84 | 表格 analysis: 分析结果
+2025-09-11 10:25:30 | INFO     | __main__:main:85 |   CSV文件: data/feishu_export/分析结果.csv
+2025-09-11 10:25:30 | INFO     | __main__:main:86 |   记录数: 0
+2025-09-11 10:25:30 | INFO     | __main__:main:89 | === 步骤5: 完整解决方案说明 ===
+2025-09-11 10:25:30 | INFO     | __main__:main:90 | ✅ 飞书应用已创建成功
+2025-09-11 10:25:30 | INFO     | __main__:main:91 | ✅ 数据同步系统已配置完成
+2025-09-11 10:25:30 | INFO     | __main__:main:92 | ✅ 本地数据存储已建立
+2025-09-11 10:25:30 | INFO     | __main__:main:93 | ✅ CSV导出功能已准备就绪
+2025-09-11 10:25:30 | INFO     | __main__:main:95 | 
+📋 用户操作指南:
+2025-09-11 10:25:30 | INFO     | __main__:main:96 | 1. 访问飞书应用链接，手动创建4个表格
+2025-09-11 10:25:30 | INFO     | __main__:main:97 | 2. 使用data/feishu_export/目录中的CSV文件导入数据
+2025-09-11 10:25:30 | INFO     | __main__:main:98 | 3. 系统会自动同步新的交易记录到本地文件
+2025-09-11 10:25:30 | INFO     | __main__:main:99 | 4. 定期导出CSV文件并更新到飞书表格
+2025-09-11 10:25:30 | INFO     | __main__:main:101 | 
+🔗 飞书应用链接:
+2025-09-11 10:25:30 | INFO     | __main__:main:103 | positions: https://open.feishu.cn/open-apis/bitable/v1/apps/ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | __main__:main:103 | trades: https://open.feishu.cn/open-apis/bitable/v1/apps/ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | __main__:main:103 | price_history: https://open.feishu.cn/open-apis/bitable/v1/apps/ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:30 | INFO     | __main__:main:103 | analysis: https://open.feishu.cn/open-apis/bitable/v1/apps/ZLwGbNZgRa4aS8s8ebfcHROGnQc
+2025-09-11 10:25:55 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-11 10:25:55 | INFO     | __main__:_initialize_agents:57 | 开始初始化子Agent...
+2025-09-11 10:25:55 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-11 10:25:55 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 6787, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:25:55 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:25:55 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 10:25:55 | INFO     | __main__:_initialize_agents:95 | 所有子Agent初始化完成
+2025-09-11 10:25:55 | INFO     | __main__:start:108 | 正在启动股票投资分析系统...
+2025-09-11 10:25:55 | INFO     | agents.data_fetching_agent:start:342 | 数据抓取Agent启动
+2025-09-11 10:25:55 | INFO     | agents.portfolio_analyzer:start:315 | 投资组合分析Agent启动
+2025-09-11 10:25:55 | INFO     | agents.feishu_integration:start:241 | 飞书集成Agent启动
+2025-09-11 10:25:55 | INFO     | agents.feishu_integration:get_access_token:58 | 飞书API响应: {'code': 0, 'expire': 6786, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:25:55 | INFO     | agents.feishu_integration:get_access_token:64 | 飞书访问令牌获取成功
+2025-09-11 10:25:55 | INFO     | agents.feishu_integration:start:246 | 飞书连接测试成功
+2025-09-11 10:25:55 | INFO     | agents.feishu_bitable_agent:start:458 | 启动飞书多维表格Agent...
+2025-09-11 10:25:55 | INFO     | agents.feishu_bitable_agent:create_bitable_app:60 | 开始创建飞书多维表格应用...
+2025-09-11 10:25:57 | INFO     | utils.feishu_bitable_manager:create_app:105 | 飞书应用创建成功: RqegbSWNZaINbOsAusQcJ7cJnif
+2025-09-11 10:25:57 | INFO     | agents.feishu_bitable_agent:create_bitable_app:67 | 多维表格应用创建成功: RqegbSWNZaINbOsAusQcJ7cJnif
+2025-09-11 10:25:57 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 持仓记录 (需要手动创建)
+2025-09-11 10:25:57 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 买卖记录 (需要手动创建)
+2025-09-11 10:25:57 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 价格历史 (需要手动创建)
+2025-09-11 10:25:57 | INFO     | agents.feishu_bitable_agent:create_bitable_app:86 | 表格配置完成: 分析结果 (需要手动创建)
+2025-09-11 10:25:57 | INFO     | agents.feishu_bitable_agent:start:464 | 多维表格自动创建成功
+2025-09-11 10:25:57 | INFO     | agents.feishu_bitable_agent:start:468 | 飞书多维表格Agent启动成功
+2025-09-11 10:25:57 | INFO     | agents.notification_agent:start:381 | 通知Agent启动
+2025-09-11 10:25:57 | INFO     | agents.ai_analysis_agent:start:441 | AI分析Agent启动
+2025-09-11 10:25:57 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: price_update - 更新所有持仓股票价格
+2025-09-11 10:25:57 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: portfolio_analysis - 分析投资组合状况
+2025-09-11 10:25:57 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: daily_report - 发送每日投资报告
+2025-09-11 10:25:57 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: weekly_report - 发送每周投资报告
+2025-09-11 10:25:57 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: ai_analysis - 运行AI智能分析
+2025-09-11 10:25:57 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: data_sync - 同步数据到飞书表格
+2025-09-11 10:25:57 | INFO     | utils.auto_scheduler:setup_default_tasks:288 | 默认定时任务设置完成
+2025-09-11 10:25:57 | INFO     | utils.auto_scheduler:start:180 | 调度器启动成功
+2025-09-11 10:25:57 | INFO     | __main__:start:123 | 股票投资分析系统启动成功
+2025-09-11 10:25:57 | INFO     | __main__:run_initial_update:158 | 执行启动后初始更新...
+2025-09-11 10:25:57 | INFO     | agents.data_fetching_agent:update_all_prices:236 | 开始更新所有股票价格...
+2025-09-11 10:25:58 | INFO     | agents.data_fetching_agent:update_all_prices:272 | 价格更新完成: 成功 0, 失败 4
+2025-09-11 10:25:59 | INFO     | agents.feishu_integration:sync_data:82 | 开始同步数据到飞书...
+2025-09-11 10:25:59 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:139 | 同步 4 个持仓到飞书
+2025-09-11 10:25:59 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:143 | 同步持仓: AAPL
+2025-09-11 10:25:59 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:143 | 同步持仓: 000001.SZ
+2025-09-11 10:25:59 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:143 | 同步持仓: 0700.HK
+2025-09-11 10:25:59 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:143 | 同步持仓: 510300
+2025-09-11 10:25:59 | INFO     | agents.feishu_integration:sync_data:96 | 数据同步到飞书成功
+2025-09-11 10:25:59 | INFO     | agents.notification_agent:send_startup_report:148 | 发送系统启动报告...
+2025-09-11 10:25:59 | INFO     | agents.notification_agent:_send_email:219 | 发送邮件到: zbin523@gmail.com
+2025-09-11 10:25:59 | INFO     | agents.notification_agent:_send_email:220 | 主题: 股票投资分析系统启动成功
+2025-09-11 10:25:59 | INFO     | agents.notification_agent:send_startup_report:178 | 启动报告发送成功
+2025-09-11 10:25:59 | INFO     | __main__:run_initial_update:172 | 初始更新完成
+2025-09-11 10:28:57 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 6605, 'msg': 'ok', 'tenant_access_token': 't-g1049bajJZMHAHZ6JYHQZDOD4WV3C3W6OZBMO4PE'}
+2025-09-11 10:28:57 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 10:28:57 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功
+2025-09-11 11:58:17 | INFO     | utils.feishu_bitable_manager:get_access_token:57 | 飞书API响应: {'code': 0, 'expire': 7200, 'msg': 'ok', 'tenant_access_token': 't-g1049bbWHHNSDUCR2Z4S74K5APRWZ7OMTO3FK3WL'}
+2025-09-11 11:58:17 | INFO     | utils.feishu_bitable_manager:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-11 11:58:17 | INFO     | agents.feishu_bitable_agent:_initialize_bitable:47 | 飞书多维表格管理器初始化成功

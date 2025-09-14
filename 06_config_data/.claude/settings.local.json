@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "mcp__puppeteer__puppeteer_navigate",
+      "mcp__puppeteer__puppeteer_screenshot",
+      "mcp__chrome-mcp__playwright_navigate",
+      "mcp__puppeteer__puppeteer_evaluate",
+      "Bash(echo:*)",
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(chmod:*)",
+      "Bash(./setup_siliconflow.sh:*)",
+      "Bash(export:*)",
+      "mcp__rube__RUBE_SEARCH_TOOLS",
+      "mcp__rube__RUBE_MULTI_EXECUTE_TOOL",
+      "mcp__rube__RUBE_MANAGE_CONNECTIONS",
+      "mcp__rube__RUBE_WAIT_FOR_CONNECTION",
+      "Bash(python:*)",
+      "Bash(curl:*)",
+      "Bash(iconv:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

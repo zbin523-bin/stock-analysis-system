@@ -1,0 +1,41 @@
+{
+  "positions": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "market_type": "us_stocks",
+      "buy_price": 150.0,
+      "quantity": 100,
+      "buy_date": "2025-09-10",
+      "notes": "美国科技股，长期持有"
+    },
+    {
+      "symbol": "000001.SZ",
+      "name": "平安银行",
+      "market_type": "a_stocks",
+      "buy_price": 12.5,
+      "quantity": 1000,
+      "buy_date": "2025-09-10",
+      "notes": "A股银行股，价值投资"
+    },
+    {
+      "symbol": "0700.HK",
+      "name": "腾讯控股",
+      "market_type": "hk_stocks",
+      "buy_price": 380.0,
+      "quantity": 50,
+      "buy_date": "2025-09-10",
+      "notes": "港股科技股，成长潜力大"
+    },
+    {
+      "symbol": "510300",
+      "name": "华泰柏瑞沪深300ETF",
+      "market_type": "funds",
+      "buy_price": 4.5,
+      "quantity": 2000,
+      "buy_date": "2025-09-10",
+      "notes": "指数基金，分散风险"
+    }
+  ],
+  "last_update": "2025-09-11T10:25:59.343535"
+}

@@ -1,0 +1,61 @@
+{
+  "positions": [
+    {
+      "symbol": "600900",
+      "name": "长江电力",
+      "market_type": "A股",
+      "quantity": 2300,
+      "avg_cost": 28.26,
+      "total_cost": 64998.0,
+      "buy_date": "2025-09-10T21:06:08.523764",
+      "currency": "USD"
+    },
+    {
+      "symbol": "515880",
+      "name": "通信ETF",
+      "market_type": "基金",
+      "quantity": 7500,
+      "avg_cost": 2.5,
+      "total_cost": 18750.0,
+      "buy_date": "2025-09-10T21:07:04.962609",
+      "currency": "USD"
+    },
+    {
+      "symbol": "00700",
+      "name": "腾讯",
+      "market_type": "港股",
+      "quantity": 300,
+      "avg_cost": 320.0,
+      "total_cost": 96000.0,
+      "buy_date": "2025-09-10T21:08:15.638245",
+      "currency": "USD"
+    },
+    {
+      "symbol": "00981",
+      "name": "中芯国际",
+      "market_type": "hk_stocks",
+      "quantity": 1000,
+      "avg_cost": 47.5,
+      "total_cost": 47500.0,
+      "buy_date": "2025-09-10T21:09:08.852143",
+      "currency": "HKD"
+    },
+    {
+      "symbol": "TAL",
+      "name": "",
+      "market_type": "us_stocks",
+      "quantity": 3142,
+      "avg_cost": 6.78,
+      "total_cost": 21302.76,
+      "buy_date": "2025-09-10T21:10:15.159001",
+      "currency": "USD",
+      "current_price": 10.970000267028809,
+      "last_update": "2025-09-14T11:06:02.495158",
+      "current_value": 34467.74,
+      "profit_loss": 13164.98,
+      "profit_loss_percent": 61.8,
+      "buy_price": 6.78
+    }
+  ],
+  "last_update": "2025-09-14T10:12:18.481829"
+}

@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "analysis": {
+    "description": "```json\n{\n  \"description\": \"图片显示了北京天气测试的相关信息，包括温度和湿度的具体数值。\",\n  \"table_type\": \"非表格类型\",\n  \"tables\": [],\n  \"key_points\": [\n    \"北京天气测试\",\n    \"温度: 23°C\",\n    \"湿度: 78%\"\n  ],\n  \"summary\": \"图片提供了北京天气测试的数据，显示当前温度为23°C，湿度为78%。\"\n}\n```",
+    "table_type": "非结构化响应",
+    "tables": [],
+    "key_points": [],
+    "summary": "AI返回了非结构化响应"
+  },
+  "table_data": [],
+  "error": null,
+  "timestamp": "2025-09-10T11:13:39.619247",
+  "image_info": {
+    "format": "PNG",
+    "size": [
+      400,
+      200
+    ],
+    "width": 400,
+    "height": 200,
+    "mode": "RGB"
+  },
+  "raw_response": "```json\n{\n  \"description\": \"图片显示了北京天气测试的相关信息，包括温度和湿度的具体数值。\",\n  \"table_type\": \"非表格类型\",\n  \"tables\": [],\n  \"key_points\": [\n    \"北京天气测试\",\n    \"温度: 23°C\",\n    \"湿度: 78%\"\n  ],\n  \"summary\": \"图片提供了北京天气测试的数据，显示当前温度为23°C，湿度为78%。\"\n}\n```"
+}

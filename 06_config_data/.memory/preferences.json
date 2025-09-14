@@ -1,0 +1,12 @@
+{
+  "language": "zh-CN",
+  "output_format": "text",
+  "verbosity": "normal",
+  "auto_save": true,
+  "analysis_preferences": {
+    "preferred_model": "Qwen/Qwen2.5-VL-72B-Instruct",
+    "default_analysis_type": "auto",
+    "enable_auto_monitor": true,
+    "save_results_to_file": true
+  }
+}

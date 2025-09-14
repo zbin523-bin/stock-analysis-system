@@ -1,0 +1,250 @@
+{
+  "results": [
+    {
+      "success": true,
+      "symbol": "600900",
+      "market_type": "A股",
+      "analysis": {
+        "fundamental": {
+          "pe_ratio": 25.5,
+          "pb_ratio": 3.2,
+          "roe": 15.8,
+          "debt_ratio": 35.2,
+          "revenue_growth": 12.5,
+          "profit_growth": 18.3,
+          "analysis": "公司基本面良好，盈利能力稳定",
+          "score": 75
+        },
+        "technical": {
+          "ma5": 150.25,
+          "ma10": 148.5,
+          "ma20": 145.3,
+          "rsi": 65.5,
+          "macd": 2.35,
+          "trend": "uptrend",
+          "support": 142.5,
+          "resistance": 155.0,
+          "analysis": "技术面显示上升趋势，但需要注意阻力位",
+          "score": 70
+        },
+        "sentiment": {
+          "sentiment": "positive",
+          "score": 100.0,
+          "positive_count": 2,
+          "negative_count": 0,
+          "neutral_count": 0,
+          "analysis": "基于2条新闻分析，市场情绪为positive",
+          "news_count": 2
+        },
+        "recommendation": {
+          "recommendation": "buy",
+          "action": "建议买入",
+          "total_score": 78.0,
+          "fundamental_score": 75,
+          "technical_score": 70,
+          "sentiment_score": 100.0,
+          "confidence": 78.0,
+          "reasoning": "基于基本面(75分)、技术面(70分)和市场情绪(100.0分)的综合分析"
+        }
+      },
+      "timestamp": "2025-09-14T09:32:19.563714"
+    },
+    {
+      "success": true,
+      "symbol": "515880",
+      "market_type": "基金",
+      "analysis": {
+        "fundamental": {
+          "pe_ratio": 25.5,
+          "pb_ratio": 3.2,
+          "roe": 15.8,
+          "debt_ratio": 35.2,
+          "revenue_growth": 12.5,
+          "profit_growth": 18.3,
+          "analysis": "公司基本面良好，盈利能力稳定",
+          "score": 75
+        },
+        "technical": {
+          "ma5": 150.25,
+          "ma10": 148.5,
+          "ma20": 145.3,
+          "rsi": 65.5,
+          "macd": 2.35,
+          "trend": "uptrend",
+          "support": 142.5,
+          "resistance": 155.0,
+          "analysis": "技术面显示上升趋势，但需要注意阻力位",
+          "score": 70
+        },
+        "sentiment": {
+          "sentiment": "positive",
+          "score": 100.0,
+          "positive_count": 2,
+          "negative_count": 0,
+          "neutral_count": 0,
+          "analysis": "基于2条新闻分析，市场情绪为positive",
+          "news_count": 2
+        },
+        "recommendation": {
+          "recommendation": "buy",
+          "action": "建议买入",
+          "total_score": 78.0,
+          "fundamental_score": 75,
+          "technical_score": 70,
+          "sentiment_score": 100.0,
+          "confidence": 78.0,
+          "reasoning": "基于基本面(75分)、技术面(70分)和市场情绪(100.0分)的综合分析"
+        }
+      },
+      "timestamp": "2025-09-14T09:32:19.563931"
+    },
+    {
+      "success": true,
+      "symbol": "00700",
+      "market_type": "港股",
+      "analysis": {
+        "fundamental": {
+          "pe_ratio": 25.5,
+          "pb_ratio": 3.2,
+          "roe": 15.8,
+          "debt_ratio": 35.2,
+          "revenue_growth": 12.5,
+          "profit_growth": 18.3,
+          "analysis": "公司基本面良好，盈利能力稳定",
+          "score": 75
+        },
+        "technical": {
+          "ma5": 150.25,
+          "ma10": 148.5,
+          "ma20": 145.3,
+          "rsi": 65.5,
+          "macd": 2.35,
+          "trend": "uptrend",
+          "support": 142.5,
+          "resistance": 155.0,
+          "analysis": "技术面显示上升趋势，但需要注意阻力位",
+          "score": 70
+        },
+        "sentiment": {
+          "sentiment": "positive",
+          "score": 100.0,
+          "positive_count": 2,
+          "negative_count": 0,
+          "neutral_count": 0,
+          "analysis": "基于2条新闻分析，市场情绪为positive",
+          "news_count": 2
+        },
+        "recommendation": {
+          "recommendation": "buy",
+          "action": "建议买入",
+          "total_score": 78.0,
+          "fundamental_score": 75,
+          "technical_score": 70,
+          "sentiment_score": 100.0,
+          "confidence": 78.0,
+          "reasoning": "基于基本面(75分)、技术面(70分)和市场情绪(100.0分)的综合分析"
+        }
+      },
+      "timestamp": "2025-09-14T09:32:19.564121"
+    },
+    {
+      "success": true,
+      "symbol": "00981",
+      "market_type": "hk_stocks",
+      "analysis": {
+        "fundamental": {
+          "pe_ratio": 25.5,
+          "pb_ratio": 3.2,
+          "roe": 15.8,
+          "debt_ratio": 35.2,
+          "revenue_growth": 12.5,
+          "profit_growth": 18.3,
+          "analysis": "公司基本面良好，盈利能力稳定",
+          "score": 75
+        },
+        "technical": {
+          "ma5": 150.25,
+          "ma10": 148.5,
+          "ma20": 145.3,
+          "rsi": 65.5,
+          "macd": 2.35,
+          "trend": "uptrend",
+          "support": 142.5,
+          "resistance": 155.0,
+          "analysis": "技术面显示上升趋势，但需要注意阻力位",
+          "score": 70
+        },
+        "sentiment": {
+          "sentiment": "positive",
+          "score": 100.0,
+          "positive_count": 2,
+          "negative_count": 0,
+          "neutral_count": 0,
+          "analysis": "基于2条新闻分析，市场情绪为positive",
+          "news_count": 2
+        },
+        "recommendation": {
+          "recommendation": "buy",
+          "action": "建议买入",
+          "total_score": 78.0,
+          "fundamental_score": 75,
+          "technical_score": 70,
+          "sentiment_score": 100.0,
+          "confidence": 78.0,
+          "reasoning": "基于基本面(75分)、技术面(70分)和市场情绪(100.0分)的综合分析"
+        }
+      },
+      "timestamp": "2025-09-14T09:32:19.564315"
+    },
+    {
+      "success": true,
+      "symbol": "TAL",
+      "market_type": "us_stocks",
+      "analysis": {
+        "fundamental": {
+          "pe_ratio": 25.5,
+          "pb_ratio": 3.2,
+          "roe": 15.8,
+          "debt_ratio": 35.2,
+          "revenue_growth": 12.5,
+          "profit_growth": 18.3,
+          "analysis": "公司基本面良好，盈利能力稳定",
+          "score": 75
+        },
+        "technical": {
+          "ma5": 150.25,
+          "ma10": 148.5,
+          "ma20": 145.3,
+          "rsi": 65.5,
+          "macd": 2.35,
+          "trend": "uptrend",
+          "support": 142.5,
+          "resistance": 155.0,
+          "analysis": "技术面显示上升趋势，但需要注意阻力位",
+          "score": 70
+        },
+        "sentiment": {
+          "sentiment": "positive",
+          "score": 100.0,
+          "positive_count": 2,
+          "negative_count": 0,
+          "neutral_count": 0,
+          "analysis": "基于2条新闻分析，市场情绪为positive",
+          "news_count": 2
+        },
+        "recommendation": {
+          "recommendation": "buy",
+          "action": "建议买入",
+          "total_score": 78.0,
+          "fundamental_score": 75,
+          "technical_score": 70,
+          "sentiment_score": 100.0,
+          "confidence": 78.0,
+          "reasoning": "基于基本面(75分)、技术面(70分)和市场情绪(100.0分)的综合分析"
+        }
+      },
+      "timestamp": "2025-09-14T09:32:19.564499"
+    }
+  ],
+  "timestamp": "2025-09-14T09:32:19.564641"
+}

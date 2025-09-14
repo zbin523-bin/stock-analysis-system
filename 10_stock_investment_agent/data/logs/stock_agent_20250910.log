@@ -1,0 +1,152 @@
+2025-09-10 19:04:05 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:04:05 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:05:45 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:05:45 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:07:08 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:07:08 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:07:59 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:07:59 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:09:12 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:09:12 | ERROR    | main_agent:_load_config:50 | 加载配置文件失败 settings.json: Expecting property name enclosed in double quotes: line 17 column 29 (char 402)
+2025-09-10 19:09:12 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 19:09:12 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:09:12 | ERROR    | main_agent:_initialize_agents:92 | 初始化子Agent失败: __init__() got an unexpected keyword argument 'data_fetching_agent'
+2025-09-10 19:09:12 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:10:24 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:10:24 | ERROR    | main_agent:_load_config:50 | 加载配置文件失败 settings.json: Expecting property name enclosed in double quotes: line 17 column 29 (char 402)
+2025-09-10 19:10:24 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 19:10:24 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:10:24 | ERROR    | main_agent:_initialize_agents:92 | 初始化子Agent失败: __init__() got an unexpected keyword argument 'data_fetching_agent'
+2025-09-10 19:10:24 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:11:16 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:11:16 | ERROR    | main_agent:_load_config:50 | 加载配置文件失败 settings.json: Expecting ',' delimiter: line 25 column 33 (char 600)
+2025-09-10 19:11:16 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 19:11:16 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:11:16 | INFO     | main_agent:_initialize_agents:88 | 所有子Agent初始化完成
+2025-09-10 19:11:16 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:11:47 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:11:47 | ERROR    | main_agent:_load_config:50 | 加载配置文件失败 settings.json: Expecting property name enclosed in double quotes: line 49 column 37 (char 1083)
+2025-09-10 19:11:47 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 19:11:47 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:11:47 | INFO     | main_agent:_initialize_agents:88 | 所有子Agent初始化完成
+2025-09-10 19:11:47 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:12:00 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:12:00 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 19:12:00 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:12:00 | INFO     | main_agent:_initialize_agents:88 | 所有子Agent初始化完成
+2025-09-10 19:12:00 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:12:33 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 19:12:33 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 19:12:33 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 19:12:33 | INFO     | main_agent:_initialize_agents:88 | 所有子Agent初始化完成
+2025-09-10 19:12:33 | INFO     | main_agent:start:101 | 正在启动股票投资分析系统...
+2025-09-10 19:12:33 | INFO     | agents.data_fetching_agent:start:342 | 数据抓取Agent启动
+2025-09-10 19:12:33 | INFO     | agents.portfolio_analyzer:start:315 | 投资组合分析Agent启动
+2025-09-10 19:12:33 | INFO     | agents.feishu_integration:start:238 | 飞书集成Agent启动
+2025-09-10 19:12:33 | INFO     | agents.feishu_integration:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-10 19:12:33 | WARNING  | agents.feishu_integration:start:245 | 飞书连接测试失败: 无法获取访问令牌
+2025-09-10 19:12:33 | INFO     | agents.notification_agent:start:381 | 通知Agent启动
+2025-09-10 19:12:33 | INFO     | agents.ai_analysis_agent:start:441 | AI分析Agent启动
+2025-09-10 19:12:33 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: price_update - 更新所有持仓股票价格
+2025-09-10 19:12:33 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: portfolio_analysis - 分析投资组合状况
+2025-09-10 19:12:33 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: daily_report - 发送每日投资报告
+2025-09-10 19:12:33 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: weekly_report - 发送每周投资报告
+2025-09-10 19:12:33 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: ai_analysis - 运行AI智能分析
+2025-09-10 19:12:33 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: data_sync - 同步数据到飞书表格
+2025-09-10 19:12:33 | INFO     | utils.auto_scheduler:setup_default_tasks:288 | 默认定时任务设置完成
+2025-09-10 19:12:33 | INFO     | utils.auto_scheduler:start:180 | 调度器启动成功
+2025-09-10 19:12:33 | INFO     | main_agent:start:116 | 股票投资分析系统启动成功
+2025-09-10 19:12:33 | INFO     | main_agent:run_initial_update:151 | 执行启动后初始更新...
+2025-09-10 19:12:33 | INFO     | agents.data_fetching_agent:update_all_prices:236 | 开始更新所有股票价格...
+2025-09-10 19:12:33 | INFO     | agents.data_fetching_agent:update_all_prices:272 | 价格更新完成: 成功 0, 失败 0
+2025-09-10 19:12:33 | INFO     | agents.feishu_integration:sync_data:79 | 开始同步数据到飞书...
+2025-09-10 19:12:33 | INFO     | agents.feishu_integration:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-10 19:12:33 | INFO     | agents.notification_agent:send_startup_report:148 | 发送系统启动报告...
+2025-09-10 19:12:33 | INFO     | agents.notification_agent:_send_email:219 | 发送邮件到: zbin523@gmail.com
+2025-09-10 19:12:33 | INFO     | agents.notification_agent:_send_email:220 | 主题: 股票投资分析系统启动成功
+2025-09-10 19:12:33 | INFO     | agents.notification_agent:send_startup_report:178 | 启动报告发送成功
+2025-09-10 19:12:33 | INFO     | main_agent:run_initial_update:165 | 初始更新完成
+2025-09-10 20:58:06 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 20:58:06 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 20:58:06 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 20:58:06 | INFO     | main_agent:_initialize_agents:88 | 所有子Agent初始化完成
+2025-09-10 20:58:06 | INFO     | main_agent:start:101 | 正在启动股票投资分析系统...
+2025-09-10 20:58:06 | INFO     | agents.data_fetching_agent:start:342 | 数据抓取Agent启动
+2025-09-10 20:58:06 | INFO     | agents.portfolio_analyzer:start:315 | 投资组合分析Agent启动
+2025-09-10 20:58:06 | INFO     | agents.feishu_integration:start:238 | 飞书集成Agent启动
+2025-09-10 20:58:06 | INFO     | agents.feishu_integration:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-10 20:58:06 | WARNING  | agents.feishu_integration:start:245 | 飞书连接测试失败: 无法获取访问令牌
+2025-09-10 20:58:06 | INFO     | agents.notification_agent:start:381 | 通知Agent启动
+2025-09-10 20:58:06 | INFO     | agents.ai_analysis_agent:start:441 | AI分析Agent启动
+2025-09-10 20:58:06 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: price_update - 更新所有持仓股票价格
+2025-09-10 20:58:06 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: portfolio_analysis - 分析投资组合状况
+2025-09-10 20:58:06 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: daily_report - 发送每日投资报告
+2025-09-10 20:58:06 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: weekly_report - 发送每周投资报告
+2025-09-10 20:58:06 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: ai_analysis - 运行AI智能分析
+2025-09-10 20:58:06 | INFO     | utils.auto_scheduler:add_task:79 | 添加定时任务: data_sync - 同步数据到飞书表格
+2025-09-10 20:58:06 | INFO     | utils.auto_scheduler:setup_default_tasks:288 | 默认定时任务设置完成
+2025-09-10 20:58:06 | INFO     | utils.auto_scheduler:start:180 | 调度器启动成功
+2025-09-10 20:58:06 | INFO     | main_agent:start:116 | 股票投资分析系统启动成功
+2025-09-10 20:58:06 | INFO     | main_agent:run_initial_update:151 | 执行启动后初始更新...
+2025-09-10 20:58:06 | INFO     | agents.data_fetching_agent:update_all_prices:236 | 开始更新所有股票价格...
+2025-09-10 20:58:06 | INFO     | agents.data_fetching_agent:update_all_prices:272 | 价格更新完成: 成功 0, 失败 0
+2025-09-10 20:58:06 | INFO     | agents.feishu_integration:sync_data:79 | 开始同步数据到飞书...
+2025-09-10 20:58:06 | INFO     | agents.feishu_integration:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-10 20:58:06 | INFO     | agents.notification_agent:send_startup_report:148 | 发送系统启动报告...
+2025-09-10 20:58:06 | INFO     | agents.notification_agent:_send_email:219 | 发送邮件到: zbin523@gmail.com
+2025-09-10 20:58:06 | INFO     | agents.notification_agent:_send_email:220 | 主题: 股票投资分析系统启动成功
+2025-09-10 20:58:06 | INFO     | agents.notification_agent:send_startup_report:178 | 启动报告发送成功
+2025-09-10 20:58:06 | INFO     | main_agent:run_initial_update:165 | 初始更新完成
+2025-09-10 20:58:06 | INFO     | agents.notification_agent:_send_email:219 | 发送邮件到: zbin523@gmail.com
+2025-09-10 20:58:06 | INFO     | agents.notification_agent:_send_email:220 | 主题: 股票投资分析系统测试通知
+2025-09-10 20:58:06 | INFO     | agents.notification_agent:send_test_notification:202 | 测试通知发送成功
+2025-09-10 20:58:06 | INFO     | main_agent:stop:132 | 正在停止股票投资分析系统...
+2025-09-10 20:58:07 | INFO     | utils.auto_scheduler:stop:187 | 调度器停止成功
+2025-09-10 20:58:07 | INFO     | agents.data_fetching_agent:stop:346 | 数据抓取Agent停止
+2025-09-10 20:58:07 | INFO     | agents.portfolio_analyzer:stop:319 | 投资组合分析Agent停止
+2025-09-10 20:58:07 | INFO     | agents.feishu_integration:stop:249 | 飞书集成Agent停止
+2025-09-10 20:58:07 | INFO     | agents.notification_agent:stop:385 | 通知Agent停止
+2025-09-10 20:58:07 | INFO     | agents.ai_analysis_agent:stop:445 | AI分析Agent停止
+2025-09-10 20:58:07 | INFO     | main_agent:stop:143 | 股票投资分析系统停止成功
+2025-09-10 20:58:14 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 20:58:14 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 20:58:14 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 20:58:14 | INFO     | main_agent:_initialize_agents:88 | 所有子Agent初始化完成
+2025-09-10 20:58:14 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 21:03:49 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 21:17:07 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 21:17:07 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 21:17:07 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 21:17:07 | INFO     | main_agent:_initialize_agents:88 | 所有子Agent初始化完成
+2025-09-10 21:17:08 | INFO     | agents.feishu_integration:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-10 21:17:08 | INFO     | agents.feishu_integration:sync_data:79 | 开始同步数据到飞书...
+2025-09-10 21:17:08 | INFO     | agents.feishu_integration:get_access_token:63 | 飞书访问令牌获取成功
+2025-09-10 21:53:39 | ERROR    | agents.feishu_integration:get_access_token:71 | 获取访问令牌失败: 404
+2025-09-10 21:53:39 | ERROR    | agents.feishu_integration:get_access_token:72 | 响应内容: 404 page not found
+2025-09-10 21:53:50 | INFO     | agents.feishu_integration:get_access_token:58 | 飞书API响应: {'code': 0, 'expire': 3855, 'msg': 'ok', 'tenant_access_token': 't-g1049akWCA6L7GZLIDSCSIJQOWRAWCU37ZHJNFYH'}
+2025-09-10 21:53:50 | INFO     | agents.feishu_integration:get_access_token:64 | 飞书访问令牌获取成功
+2025-09-10 21:54:03 | INFO     | agents.feishu_integration:get_access_token:58 | 飞书API响应: {'code': 0, 'expire': 3843, 'msg': 'ok', 'tenant_access_token': 't-g1049akWCA6L7GZLIDSCSIJQOWRAWCU37ZHJNFYH'}
+2025-09-10 21:54:03 | INFO     | agents.feishu_integration:get_access_token:64 | 飞书访问令牌获取成功
+2025-09-10 21:54:03 | INFO     | agents.feishu_integration:sync_data:82 | 开始同步数据到飞书...
+2025-09-10 21:54:03 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:139 | 同步 0 个持仓到飞书
+2025-09-10 21:54:03 | INFO     | agents.feishu_integration:sync_data:96 | 数据同步到飞书成功
+2025-09-10 21:54:36 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 21:54:36 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 21:54:36 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 21:54:36 | INFO     | main_agent:_initialize_agents:88 | 所有子Agent初始化完成
+2025-09-10 21:54:36 | INFO     | agents.feishu_integration:sync_data:82 | 开始同步数据到飞书...
+2025-09-10 21:54:36 | INFO     | agents.feishu_integration:get_access_token:58 | 飞书API响应: {'code': 0, 'expire': 3810, 'msg': 'ok', 'tenant_access_token': 't-g1049akWCA6L7GZLIDSCSIJQOWRAWCU37ZHJNFYH'}
+2025-09-10 21:54:36 | INFO     | agents.feishu_integration:get_access_token:64 | 飞书访问令牌获取成功
+2025-09-10 21:54:36 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:139 | 同步 4 个持仓到飞书
+2025-09-10 21:54:36 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:143 | 同步持仓: AAPL
+2025-09-10 21:54:36 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:143 | 同步持仓: 000001.SZ
+2025-09-10 21:54:36 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:143 | 同步持仓: 0700.HK
+2025-09-10 21:54:36 | INFO     | agents.feishu_integration:_sync_portfolio_to_feishu:143 | 同步持仓: 510300
+2025-09-10 21:54:36 | INFO     | agents.feishu_integration:sync_data:96 | 数据同步到飞书成功
+2025-09-10 21:55:26 | WARNING  | agents.data_fetching_agent:<module>:22 | TuShare或Alpha Vantage未安装，某些功能可能不可用
+2025-09-10 21:55:26 | INFO     | main_agent:_initialize_agents:56 | 开始初始化子Agent...
+2025-09-10 21:55:26 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-10 21:55:26 | INFO     | main_agent:_initialize_agents:88 | 所有子Agent初始化完成
+2025-09-10 21:55:26 | INFO     | agents.notification_agent:_send_email:219 | 发送邮件到: zbin523@gmail.com
+2025-09-10 21:55:26 | INFO     | agents.notification_agent:_send_email:220 | 主题: 股票投资分析系统测试通知
+2025-09-10 21:55:26 | INFO     | agents.notification_agent:send_test_notification:202 | 测试通知发送成功

@@ -1,0 +1,16 @@
+[Unit]
+Description=Stock Analysis Automated System
+After=network.target
+
+[Service]
+Type=simple
+User=zhangbin
+WorkingDirectory=/Volumes/Work/SynologyDrive/claude
+ExecStart=/Library/Developer/CommandLineTools/usr/bin/python3 production_stock_analyzer.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2025-09-10T14:10:59.821983",
+    "type": "image_analysis",
+    "result": {
+      "image_path": "pic/微信图片_20250906234045_82_276.jpg",
+      "analysis_type": "auto",
+      "timestamp": "2025-09-10T14:09:58.419775",
+      "success": false,
+      "error": "网络请求失败: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=60)",
+      "api_version": "1.0.0",
+      "request_time": "2025-09-10T14:10:59.821957"
+    },
+    "session_id": "7eadd282-780c-4458-ae1f-03ff87cdc21d"
+  }
+]

@@ -1,0 +1,32 @@
+{
+    "name": "stock-portfolio-management-system",
+    "version": "1.0.0",
+    "description": "智能投资组合管理系统 - 支持A股、美股、港股实时数据抓取和交易记录管理",
+    "main": "web/index.html",
+    "scripts": {
+        "start": "python -m http.server 8080",
+        "dev": "python -m http.server 8080",
+        "api": "cd api && python app.py"
+    },
+    "keywords": [
+        "stock",
+        "portfolio",
+        "investment",
+        "trading",
+        "finance",
+        "A股",
+        "美股",
+        "港股",
+        "基金"
+    ],
+    "author": "Stock Portfolio Manager",
+    "license": "MIT",
+    "homepage": "https://github.com/yourusername/stock-portfolio-management-system",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/stock-portfolio-management-system.git"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}

@@ -1,0 +1,108 @@
+{
+  "system": {
+    "name": "股票投资分析管理系统",
+    "version": "1.0.0",
+    "author": "Claude Code Agent",
+    "description": "智能股票投资组合分析和预警系统",
+    "timezone": "Asia/Shanghai",
+    "language": "zh-CN"
+  },
+  "data_sources": {
+    "us_stocks": "alpha_vantage",
+    "a_stocks": "tushare",
+    "hk_stocks": "alpha_vantage",
+    "funds": "alpha_vantage"
+  },
+  "update_frequency": {
+    "price_update": "300",
+    "analysis": "3600",
+    "daily_report": "18:00",
+    "weekly_report": "sunday_18:00"
+  },
+  "notification_settings": {
+    "price_alert": {
+      "enabled": true,
+      "threshold_percent": 5.0
+    },
+    "daily_report": {
+      "enabled": true,
+      "include_charts": true
+    },
+    "risk_alert": {
+      "enabled": true,
+      "max_position_size": 20.0
+    }
+  },
+  "risk_management": {
+    "max_portfolio_risk": 0.15,
+    "stop_loss": 0.10,
+    "take_profit": 0.25
+  },
+  "logging": {
+    "level": "INFO",
+    "max_file_size": "10MB",
+    "backup_count": 5,
+    "log_to_file": true,
+    "log_to_console": true
+  },
+  "cache_settings": {
+    "price_cache_duration": 300,
+    "analysis_cache_duration": 3600,
+    "max_cache_size": 1000
+  },
+  "feishu_bitable": {
+    "auto_create_tables": true,
+    "tables": {
+      "positions": {
+        "name": "持仓记录",
+        "fields": [
+          {"name": "symbol", "type": "text"},
+          {"name": "name", "type": "text"},
+          {"name": "market_type", "type": "text"},
+          {"name": "buy_price", "type": "text"},
+          {"name": "current_price", "type": "text"},
+          {"name": "quantity", "type": "text"},
+          {"name": "buy_date", "type": "text"},
+          {"name": "total_cost", "type": "text"},
+          {"name": "current_value", "type": "text"},
+          {"name": "profit_loss", "type": "text"},
+          {"name": "profit_loss_percent", "type": "text"},
+          {"name": "notes", "type": "text"}
+        ]
+      },
+      "trades": {
+        "name": "买卖记录",
+        "fields": [
+          {"name": "symbol", "type": "text"},
+          {"name": "name", "type": "text"},
+          {"name": "trade_type", "type": "text"},
+          {"name": "price", "type": "text"},
+          {"name": "quantity", "type": "text"},
+          {"name": "amount", "type": "text"},
+          {"name": "trade_date", "type": "text"},
+          {"name": "notes", "type": "text"}
+        ]
+      },
+      "price_history": {
+        "name": "价格历史",
+        "fields": [
+          {"name": "symbol", "type": "text"},
+          {"name": "price", "type": "text"},
+          {"name": "timestamp", "type": "text"},
+          {"name": "change_percent", "type": "text"}
+        ]
+      },
+      "analysis": {
+        "name": "分析结果",
+        "fields": [
+          {"name": "symbol", "type": "text"},
+          {"name": "analysis_type", "type": "text"},
+          {"name": "recommendation", "type": "text"},
+          {"name": "confidence", "type": "text"},
+          {"name": "analysis_date", "type": "text"},
+          {"name": "notes", "type": "text"}
+        ]
+      }
+    }
+  }
+}

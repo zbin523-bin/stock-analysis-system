@@ -1,0 +1,64 @@
+{
+  "analysis_summary": {
+    "image_path": "pic/user_image_20250910_111234.png",
+    "analysis_time": "2025-09-10T11:15:11.789798",
+    "model_used": "Qwen/Qwen2.5-VL-72B-Instruct",
+    "content_type": "数据分析报告",
+    "table_rows": 5,
+    "chart_count": 1,
+    "data_status": "所有参数正常"
+  },
+  "extracted_table": {
+    "title": "环境参数表",
+    "headers": [
+      "项目",
+      "数值",
+      "单位",
+      "状态"
+    ],
+    "rows": [
+      [
+        "温度",
+        "23.5",
+        "°C",
+        "正常"
+      ],
+      [
+        "湿度",
+        "65",
+        "%",
+        "适中"
+      ],
+      [
+        "压力",
+        "1013",
+        "hPa",
+        "标准"
+      ],
+      [
+        "风速",
+        "12",
+        "km/h",
+        "微风"
+      ],
+      [
+        "能见度",
+        "15",
+        "km",
+        "良好"
+      ]
+    ]
+  },
+  "key_numerical_data": [
+    "23.5",
+    "65",
+    "1013",
+    "12",
+    "15"
+  ],
+  "insights": [
+    "所有环境参数均处于正常或良好状态",
+    "系统运行稳定，无需干预"
+  ],
+  "recommendation": "系统运行稳定，无需干预"
+}

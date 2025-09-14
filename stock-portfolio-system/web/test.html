@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票数据测试页面</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .info { background-color: #d1ecf1; color: #0c5460; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        button { padding: 10px 20px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; }
+        .btn-primary { background-color: #007bff; color: white; }
+        .btn-success { background-color: #28a745; color: white; }
+        .btn-warning { background-color: #ffc107; color: black; }
+    </style>
+</head>
+<body>
+    <h1>股票数据测试页面</h1>
+    
+    <div id="status"></div>
+    
+    <h2>API测试</h2>
+    <button class="btn-primary" onclick="testHealth()">健康检查</button>
+    <button class="btn-success" onclick="testPortfolio()">投资组合数据</button>
+    <button class="btn-warning" onclick="testAStock()">A股数据测试</button>
+    
+    <h2>测试结果</h2>
+    <div id="results"></div>
+    
+    <script>
+        const API_BASE_URL = 'http://localhost:5000/api';
+        
+        function log(message, type = 'info') {
+            const statusDiv = document.getElementById('status');
+            const timestamp = new Date().toLocaleTimeString();
+            statusDiv.innerHTML += `<div class="status ${type}">[${timestamp}] ${message}</div>`;
+        }
+        
+        function showResults(data, title) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML += `<h3>${title}</h3><pre>${JSON.stringify(data, null, 2)}</pre>`;
+        }
+        
+        async function testHealth() {
+            try {
+                log('正在测试健康检查...');
+                const response = await fetch(`${API_BASE_URL}/health`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    log('健康检查成功', 'success');
+                    showResults(data, '健康检查结果');
+                } else {
+                    log(`健康检查失败: ${response.status}`, 'error');
+                }
+            } catch (error) {
+                log(`健康检查异常: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testPortfolio() {
+            try {
+                log('正在测试投资组合数据...');
+                const response = await fetch(`${API_BASE_URL}/portfolio`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    log('投资组合数据获取成功', 'success');
+                    showResults(data, '投资组合数据');
+                    
+                    // 显示持仓统计
+                    if (data.positions && data.positions.length > 0) {
+                        log(`共找到 ${data.positions.length} 个持仓`, 'success');
+                        data.positions.forEach((pos, index) => {
+                            log(`持仓 ${index + 1}: ${pos.name} (${pos.code}) - 当前价格: ${pos.currentPrice}`, 'info');
+                        });
+                    }
+                } else {
+                    log(`投资组合数据获取失败: ${response.status}`, 'error');
+                }
+            } catch (error) {
+                log(`投资组合数据获取异常: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testAStock() {
+            try {
+                log('正在测试A股数据...');
+                const response = await fetch(`${API_BASE_URL}/stock/a/600036`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    log('A股数据获取成功', 'success');
+                    showResults(data, 'A股数据 (600036 招商银行)');
+                } else {
+                    log(`A股数据获取失败: ${response.status}`, 'error');
+                }
+            } catch (error) {
+                log(`A股数据获取异常: ${error.message}`, 'error');
+            }
+        }
+        
+        // 页面加载时自动测试
+        window.onload = function() {
+            log('页面加载完成，开始自动测试...', 'info');
+            setTimeout(() => {
+                testHealth();
+                setTimeout(() => {
+                    testPortfolio();
+                    setTimeout(() => {
+                        testAStock();
+                    }, 1000);
+                }, 1000);
+            }, 500);
+        };
+    </script>
+</body>
+</html>

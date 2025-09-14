@@ -1,0 +1,60 @@
+{
+  "url": "https://www.baidu.com",
+  "title": "百度一下，你就知道",
+  "analysis": {
+    "pageInfo": {
+      "title": "百度一下，你就知道",
+      "url": "https://www.baidu.com/",
+      "domain": "www.baidu.com",
+      "protocol": "https:",
+      "language": "unknown"
+    },
+    "metadata": {
+      "referrer": "origin-when-cross-origin",
+      "theme-color": "#ffffff",
+      "description": "全球领先的中文搜索引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关的搜索结果。"
+    },
+    "contentStats": {
+      "wordCount": 41,
+      "charCount": 374,
+      "readingTime": 1
+    },
+    "linkAnalysis": {
+      "totalLinks": 67,
+      "internalLinks": 23,
+      "externalLinks": 38
+    },
+    "imageAnalysis": {
+      "totalImages": 28,
+      "imagesWithAlt": 3,
+      "accessibilityScore": 10.714285714285714
+    },
+    "structureAnalysis": {
+      "headings": {
+        "h1": 0,
+        "h2": 0,
+        "h3": 0,
+        "h4": 0,
+        "h5": 0,
+        "h6": 0
+      },
+      "forms": 1,
+      "inputs": 21,
+      "tables": 0,
+      "videos": 1,
+      "iframes": 0
+    },
+    "keyContent": {
+      "description": "全球领先的中文搜索引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关的搜索结果。",
+      "keywords": "",
+      "author": "",
+      "publishDate": "",
+      "mainHeading": "",
+      "summary": "新闻hao123地图贴吧视频图片网盘文库更多\n设置登录\n深度搜索\n百度一下\nAI助手比DeepSeek快5倍\nAI生图\nAI写作\nAI PPT\n生成视频\n更多\n\n换一换\n总书记的这六天\n500后女钢筋工每天工地干10小时赚320\n热\n1日本人也不待见数典忘祖的石平\n新\n6西藏一垃圾站30多只熊集体觅食\n2特朗普上诉失败 需赔女方8330万美元\n热\n7自闭症学生报到当天遭劝退 校方回应\n3育儿补贴申领正式全面开放\n8顶尖华裔数学家被迫在美筹款\n热\n4男子2万拍下“玛莎拉蒂”却是老头乐\n新\n9家长投诉小学二年级1周仅1节英语课\n新\n\n关于百度\n\nAbout Baidu\n\n使用百度前必读\n\n帮助中心\n\n企业推广\n\n京公网安备11000002000001号\n\n京ICP证030173号\n\n互联网新闻信息服务许可证11220180008\n\n"
+    },
+    "pageType": "通用页面",
+    "seoScore": 46
+  },
+  "timestamp": "2025-09-09T11:17:51.370975",
+  "analysis_summary": "这是一个通用页面，包含41词，预计阅读时间1分钟，缺少H1标题，需要SEO优化(46分)，图片可访问性得分10.714285714285714%。"
+}

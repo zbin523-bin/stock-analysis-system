@@ -1,0 +1,77 @@
+{
+  "url": "https://www.python.org",
+  "title": "Welcome to Python.org",
+  "analysis": {
+    "pageInfo": {
+      "title": "Welcome to Python.org",
+      "url": "https://www.python.org/",
+      "domain": "www.python.org",
+      "protocol": "https:",
+      "language": "en"
+    },
+    "metadata": {
+      "application-name": "Python.org",
+      "msapplication-tooltip": "The official home of the Python Programming Language",
+      "apple-mobile-web-app-title": "Python.org",
+      "apple-mobile-web-app-capable": "yes",
+      "apple-mobile-web-app-status-bar-style": "black",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "HandheldFriendly": "True",
+      "format-detection": "telephone=no",
+      "msapplication-TileImage": "/static/metro-icon-144x144.png",
+      "msapplication-TileColor": "#3673a5",
+      "msapplication-navbutton-color": "#3673a5",
+      "description": "The official home of the Python Programming Language",
+      "keywords": "Python programming language object oriented web free open source software license documentation download community",
+      "og:type": "website",
+      "og:site_name": "Python.org",
+      "og:title": "Welcome to Python.org",
+      "og:description": "The official home of the Python Programming Language",
+      "og:image": "https://www.python.org/static/opengraph-icon-200x200.png",
+      "og:image:secure_url": "https://www.python.org/static/opengraph-icon-200x200.png",
+      "og:url": "https://www.python.org/"
+    },
+    "contentStats": {
+      "wordCount": 286,
+      "charCount": 1945,
+      "readingTime": 2
+    },
+    "linkAnalysis": {
+      "totalLinks": 222,
+      "internalLinks": 143,
+      "externalLinks": 76
+    },
+    "imageAnalysis": {
+      "totalImages": 1,
+      "imagesWithAlt": 1,
+      "accessibilityScore": 100
+    },
+    "structureAnalysis": {
+      "headings": {
+        "h1": 6,
+        "h2": 9,
+        "h3": 1,
+        "h4": 6,
+        "h5": 0,
+        "h6": 0
+      },
+      "forms": 1,
+      "inputs": 1,
+      "tables": 1,
+      "videos": 0,
+      "iframes": 0
+    },
+    "keyContent": {
+      "description": "The official home of the Python Programming Language",
+      "keywords": "Python programming language object oriented web free open source software license documentation download community",
+      "author": "",
+      "publishDate": "2025-09-02T14:02:00.000001+00:00",
+      "mainHeading": "",
+      "summary": "Get Started\n\nWhether you're new to programming or an experienced developer, it's easy to learn and use Python. \n\nStart with our Beginner’s Guide\n\nDownload\n\nPython source code and installers are available for download for all versions. \n\nLatest: Python 3."
+    },
+    "pageType": "通用页面",
+    "seoScore": 90
+  },
+  "timestamp": "2025-09-09T10:57:46.460986",
+  "analysis_summary": "这是一个通用页面，包含286词，预计阅读时间2分钟，存在多个H1标题，SEO优化良好(90分)。"
+}

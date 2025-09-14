@@ -1,0 +1,5 @@
+
+# 股票分析系统定时任务
+# 每天10:00和16:00运行分析
+0 10 * * * cd /Volumes/Work/SynologyDrive/claude && /Library/Developer/CommandLineTools/usr/bin/python3 production_stock_analyzer.py >> logs/cron.log 2>&1
+0 16 * * * cd /Volumes/Work/SynologyDrive/claude && /Library/Developer/CommandLineTools/usr/bin/python3 production_stock_analyzer.py >> logs/cron.log 2>&1

@@ -1,0 +1,34 @@
+{
+  "alpha_vantage": {
+    "api_key": "5DGMRPMMEUBMX7PU",
+    "base_url": "https://www.alphavantage.co/query",
+    "rate_limit": {
+      "calls_per_minute": 5,
+      "calls_per_day": 500
+    }
+  },
+  "tushare": {
+    "api_key": "91cb00a3a0021ce5faa4244f491a6669b926b3d50b381b1680bace81",
+    "base_url": "http://api.tushare.pro",
+    "rate_limit": {
+      "calls_per_minute": 100,
+      "calls_per_day": 1000
+    }
+  },
+  "feishu": {
+    "app_id": "cli_a84bed3e7b7a500c",
+    "app_secret": "ovbdhReJVSf6SeMjsXRfncMmoMduXp7z",
+    "base_url": "https://open.feishu.cn/open-apis",
+    "wiki_url": "https://x0r4zq4mtsh.feishu.cn/wiki/APmlw9zcmiXYcfkMZIGc0pEaneb?from=from_copylink"
+  },
+  "google_sheets": {
+    "enabled": true,
+    "spreadsheet_id": "",
+    "credentials": "auto"
+  },
+  "gmail": {
+    "enabled": true,
+    "sender_email": "zbin523@gmail.com",
+    "recipient_email": "zhangbin19850523@163.com"
+  }
+}

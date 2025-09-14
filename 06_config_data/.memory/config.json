@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "created_time": "2025-09-10T14:09:58.412262",
+  "last_updated": "2025-09-10T14:10:59.822115",
+  "image_analysis": {
+    "auto_analyze": true,
+    "auto_monitor": true,
+    "default_model": "Qwen/Qwen2.5-VL-72B-Instruct",
+    "watch_directories": [
+      "pic",
+      "uploads",
+      "images"
+    ],
+    "max_history_size": 1000,
+    "save_results": true
+  },
+  "memory_settings": {
+    "max_memory_size": 10000,
+    "auto_cleanup": true,
+    "cleanup_threshold": 0.8,
+    "backup_enabled": true,
+    "backup_interval": 86400
+  }
+}

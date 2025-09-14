@@ -1,0 +1,67 @@
+[
+  {
+    "symbol": "600900",
+    "name": "长江电力",
+    "market_type": "A股",
+    "trade_type": "buy",
+    "price": 28.26,
+    "quantity": 2300,
+    "total_cost": 64998.0,
+    "fees": 0,
+    "timestamp": "2025-09-10T21:06:08.523764",
+    "notes": "长期持有",
+    "id": 1
+  },
+  {
+    "symbol": "515880",
+    "name": "通信ETF",
+    "market_type": "基金",
+    "trade_type": "buy",
+    "price": 2.5,
+    "quantity": 7500,
+    "total_cost": 18750.0,
+    "fees": 0,
+    "timestamp": "2025-09-10T21:07:04.962609",
+    "notes": "投资",
+    "id": 2
+  },
+  {
+    "symbol": "00700",
+    "name": "腾讯",
+    "market_type": "港股",
+    "trade_type": "buy",
+    "price": 320.0,
+    "quantity": 300,
+    "total_cost": 96000.0,
+    "fees": 0,
+    "timestamp": "2025-09-10T21:08:15.638245",
+    "notes": "",
+    "id": 3
+  },
+  {
+    "symbol": "00981",
+    "name": "中芯国际",
+    "market_type": "hk_stocks",
+    "trade_type": "buy",
+    "price": 47.5,
+    "quantity": 1000,
+    "total_cost": 47500.0,
+    "fees": 0,
+    "timestamp": "2025-09-10T21:09:08.852143",
+    "notes": "",
+    "id": 4
+  },
+  {
+    "symbol": "TAL",
+    "name": "",
+    "market_type": "us_stocks",
+    "trade_type": "buy",
+    "price": 6.78,
+    "quantity": 3142,
+    "total_cost": 21302.760000000002,
+    "fees": 0,
+    "timestamp": "2025-09-10T21:10:15.159001",
+    "notes": "",
+    "id": 5
+  }
+]

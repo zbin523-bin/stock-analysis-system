@@ -1,0 +1,18 @@
+{
+  "total_analyzed": 1,
+  "analysis_history": [
+    {
+      "timestamp": "2025-09-10T14:10:59.819445",
+      "image_path": "pic/微信图片_20250906234045_82_276.jpg",
+      "analysis_type": "auto",
+      "model_used": "",
+      "success": false
+    }
+  ],
+  "frequent_patterns": {},
+  "user_preferences": {
+    "preferred_model": "Qwen/Qwen2.5-VL-72B-Instruct",
+    "preferred_analysis_type": "general"
+  },
+  "learned_insights": []
+}

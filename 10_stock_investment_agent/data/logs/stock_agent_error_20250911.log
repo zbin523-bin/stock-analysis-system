@@ -1,0 +1,61 @@
+2025-09-11 10:19:02 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-11 10:19:05 | ERROR    | utils.feishu_bitable_manager:create_table:150 | 创建表格失败: WrongRequestBody
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:94 | 表格创建失败: 持仓记录
+2025-09-11 10:19:05 | ERROR    | utils.feishu_bitable_manager:create_table:150 | 创建表格失败: WrongRequestBody
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:94 | 表格创建失败: 买卖记录
+2025-09-11 10:19:05 | ERROR    | utils.feishu_bitable_manager:create_table:150 | 创建表格失败: WrongRequestBody
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:94 | 表格创建失败: 价格历史
+2025-09-11 10:19:05 | ERROR    | utils.feishu_bitable_manager:create_table:150 | 创建表格失败: WrongRequestBody
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:94 | 表格创建失败: 分析结果
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:sync_position_to_bitable:135 | 持仓数据同步失败: Table positions not found
+2025-09-11 10:19:05 | ERROR    | agents.feishu_bitable_agent:sync_trade_to_bitable:167 | 交易数据同步失败: Table trades not found
+2025-09-11 10:20:55 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
+2025-09-11 10:21:08 | ERROR    | utils.feishu_bitable_manager:create_table:170 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:08 | ERROR    | utils.feishu_bitable_manager:create_table:171 | 错误代码: 1254001
+2025-09-11 10:21:08 | ERROR    | utils.feishu_bitable_manager:create_table:172 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102108356C45DA0B07CE59504A", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102108356C45DA0B07CE59504A&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:08 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 持仓记录
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:170 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:171 | 错误代码: 1254001
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:172 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102108054866C9FC819EECBA5B", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102108054866C9FC819EECBA5B&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:09 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 买卖记录
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:170 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:171 | 错误代码: 1254001
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:172 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111021093C58F292A51317DE6E5F", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111021093C58F292A51317DE6E5F&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:09 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 价格历史
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:170 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:171 | 错误代码: 1254001
+2025-09-11 10:21:09 | ERROR    | utils.feishu_bitable_manager:create_table:172 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111021090CF92CEC16620ACD3370", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111021090CF92CEC16620ACD3370&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:09 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 分析结果
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:163 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 错误代码: 1254001
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102152BF0DFC488AAD09C29A02", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102152BF0DFC488AAD09C29A02&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:52 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 持仓记录
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:163 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 错误代码: 1254001
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111021523EE21AF3525586C1373B", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111021523EE21AF3525586C1373B&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:52 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 买卖记录
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:163 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 错误代码: 1254001
+2025-09-11 10:21:52 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102152ED89AA57333FE76A323F", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102152ED89AA57333FE76A323F&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:52 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 价格历史
+2025-09-11 10:21:53 | ERROR    | utils.feishu_bitable_manager:create_table:163 | 创建表格失败: WrongRequestBody
+2025-09-11 10:21:53 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 错误代码: 1254001
+2025-09-11 10:21:53 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102153A7E790FE2DD1C488EAB9", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102153A7E790FE2DD1C488EAB9&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:21:53 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 分析结果
+2025-09-11 10:22:28 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 创建表格失败: WrongRequestBody
+2025-09-11 10:22:28 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 错误代码: 1254001
+2025-09-11 10:22:28 | ERROR    | utils.feishu_bitable_manager:create_table:166 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "20250911102228943FAD23A962D8E51C09", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20250911102228943FAD23A962D8E51C09&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:28 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 持仓记录
+2025-09-11 10:22:31 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 创建表格失败: WrongRequestBody
+2025-09-11 10:22:31 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 错误代码: 1254001
+2025-09-11 10:22:31 | ERROR    | utils.feishu_bitable_manager:create_table:166 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111022312602E5E2291A0BBD5742", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111022312602E5E2291A0BBD5742&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:31 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 买卖记录
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 创建表格失败: WrongRequestBody
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 错误代码: 1254001
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:166 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "2025091110223277C77614B53017705C97", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025091110223277C77614B53017705C97&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:32 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 价格历史
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:164 | 创建表格失败: WrongRequestBody
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:165 | 错误代码: 1254001
+2025-09-11 10:22:32 | ERROR    | utils.feishu_bitable_manager:create_table:166 | 完整响应: {"code": 1254001, "msg": "WrongRequestBody", "error": {"log_id": "202509111022326C51B10EEA9F78599671", "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202509111022326C51B10EEA9F78599671&code=1254001&method_id=6965347212289605634"}}
+2025-09-11 10:22:32 | ERROR    | agents.feishu_bitable_agent:create_bitable_app:97 | 表格创建失败: 分析结果
+2025-09-11 10:25:55 | ERROR    | agents.data_fetching_agent:_initialize_apis:70 | API初始化失败: name 'TimeSeries' is not defined
