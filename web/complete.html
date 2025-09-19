@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>完整股票投资组合系统测试</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .stock-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .stock-table th, .stock-table td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        .stock-table th { background: #f8f9fa; font-weight: bold; }
+        .profit-positive { color: #27ae60; }
+        .profit-negative { color: #e74c3c; }
+        .btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin: 5px; }
+        .btn-primary { background: #3498db; color: white; }
+        .btn-success { background: #27ae60; color: white; }
+        .btn-warning { background: #f39c12; color: white; }
+        .btn-danger { background: #e74c3c; color: white; }
+        .status { padding: 10px; border-radius: 4px; margin: 10px 0; }
+        .status-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .status-error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .status-info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        .status-warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .summary-item { background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .summary-value { font-size: 24px; font-weight: bold; margin: 10px 0; }
+        .market-tabs { display: flex; margin-bottom: 20px; border-bottom: 2px solid #eee; }
+        .market-tab { padding: 10px 20px; cursor: pointer; border: none; background: none; font-size: 16px; }
+        .market-tab.active { border-bottom: 3px solid #667eea; color: #667eea; }
+        .market-content { display: none; }
+        .market-content.active { display: block; }
+        .loading { display: none; text-align: center; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 5px; }
+        .test-result { margin: 5px 0; padding: 8px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 完整股票投资组合系统测试</h1>
+            <p>支持A股、港股、美股的实时数据监控与投资组合管理</p>
+        </div>
+
+        <div class="card">
+            <h2>🔧 系统控制</h2>
+            <div id="systemStatus" class="status status-info">
+                正在检查系统状态...
+            </div>
+            <button class="btn btn-primary" onclick="loadData()">🔄 刷新所有数据</button>
+            <button class="btn btn-success" onclick="testAPI()">🔍 测试API连接</button>
+            <button class="btn btn-warning" onclick="testAllMarkets()">📊 测试所有市场</button>
+            <button class="btn btn-danger" onclick="clearCache()">🗑️ 清除缓存</button>
+        </div>
+
+        <div class="card">
+            <h2>📈 投资组合概览</h2>
+            <div class="summary">
+                <div class="summary-item">
+                    <div>总资产</div>
+                    <div id="totalAssets" class="summary-value">¥0.00</div>
+                </div>
+                <div class="summary-item">
+                    <div>总市值</div>
+                    <div id="totalValue" class="summary-value">¥0.00</div>
+                </div>
+                <div class="summary-item">
+                    <div>总盈亏</div>
+                    <div id="totalProfit" class="summary-value">¥0.00</div>
+                </div>
+                <div class="summary-item">
+                    <div>现金余额</div>
+                    <div id="cashBalance" class="summary-value">¥0.00</div>
+                </div>
+                <div class="summary-item">
+                    <div>A股持仓</div>
+                    <div id="aStockCount" class="summary-value">0</div>
+                </div>
+                <div class="summary-item">
+                    <div>港股持仓</div>
+                    <div id="hkStockCount" class="summary-value">0</div>
+                </div>
+                <div class="summary-item">
+                    <div>美股持仓</div>
+                    <div id="usStockCount" class="summary-value">0</div>
+                </div>
+                <div class="summary-item">
+                    <div>数据状态</div>
+                    <div id="dataStatus" class="summary-value">🔄</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📊 分市场持仓明细</h2>
+            <div class="market-tabs">
+                <button class="market-tab active" onclick="switchMarket('all')">全部</button>
+                <button class="market-tab" onclick="switchMarket('a')">A股</button>
+                <button class="market-tab" onclick="switchMarket('hk')">港股</button>
+                <button class="market-tab" onclick="switchMarket('us')">美股</button>
+            </div>
+            
+            <div id="loading" class="loading">
+                <p>🔄 正在加载数据...</p>
+            </div>
+            
+            <div id="allContent" class="market-content active">
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>市场</th>
+                            <th>股票名称</th>
+                            <th>股票代码</th>
+                            <th>当前价格</th>
+                            <th>涨跌额</th>
+                            <th>涨跌幅</th>
+                            <th>持仓数量</th>
+                            <th>市值</th>
+                            <th>盈亏</th>
+                            <th>盈亏比例</th>
+                            <th>数据状态</th>
+                        </tr>
+                    </thead>
+                    <tbody id="allStockTableBody">
+                        <tr><td colspan="11" style="text-align: center; color: #666;">暂无数据</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="aContent" class="market-content">
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>股票名称</th>
+                            <th>股票代码</th>
+                            <th>当前价格</th>
+                            <th>涨跌额</th>
+                            <th>涨跌幅</th>
+                            <th>持仓数量</th>
+                            <th>市值</th>
+                            <th>盈亏</th>
+                            <th>盈亏比例</th>
+                        </tr>
+                    </thead>
+                    <tbody id="aStockTableBody">
+                        <tr><td colspan="9" style="text-align: center; color: #666;">暂无数据</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="hkContent" class="market-content">
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>股票名称</th>
+                            <th>股票代码</th>
+                            <th>当前价格</th>
+                            <th>涨跌额</th>
+                            <th>涨跌幅</th>
+                            <th>持仓数量</th>
+                            <th>市值</th>
+                            <th>盈亏</th>
+                            <th>盈亏比例</th>
+                        </tr>
+                    </thead>
+                    <tbody id="hkStockTableBody">
+                        <tr><td colspan="9" style="text-align: center; color: #666;">暂无数据</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="usContent" class="market-content">
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>股票名称</th>
+                            <th>股票代码</th>
+                            <th>当前价格</th>
+                            <th>涨跌额</th>
+                            <th>涨跌幅</th>
+                            <th>持仓数量</th>
+                            <th>市值</th>
+                            <th>盈亏</th>
+                            <th>盈亏比例</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usStockTableBody">
+                        <tr><td colspan="9" style="text-align: center; color: #666;">暂无数据</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🧪 API测试区域</h2>
+            <div class="test-section">
+                <h3>单一股票测试</h3>
+                <button class="btn btn-primary" onclick="testSpecificStock('a', '600036')">测试A股(600036)</button>
+                <button class="btn btn-primary" onclick="testSpecificStock('hk', '0700')">测试港股(0700)</button>
+                <button class="btn btn-primary" onclick="testSpecificStock('us', 'AAPL')">测试美股(AAPL)</button>
+                <div id="singleStockTest"></div>
+            </div>
+            
+            <div class="test-section">
+                <h3>批量测试</h3>
+                <button class="btn btn-warning" onclick="batchTest()">批量测试所有股票</button>
+                <div id="batchTest"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:5001/api';
+        
+        let currentMarket = 'all';
+        let portfolioData = null;
+        
+        function showStatus(message, type = 'info') {
+            const statusDiv = document.getElementById('systemStatus');
+            const timestamp = new Date().toLocaleTimeString();
+            statusDiv.innerHTML = `<div class="status ${type}">[${timestamp}] ${message}</div>`;
+        }
+        
+        function showLoading(show) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+        }
+        
+        function formatCurrency(value, currency = 'CNY') {
+            const symbols = { CNY: '¥', USD: '$', HKD: 'HK$' };
+            const symbol = symbols[currency] || '';
+            return `${symbol}${value.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+        }
+        
+        function formatPercent(value) {
+            return `${value >= 0 ? '+' : ''}${value.toFixed(2)}%`;
+        }
+        
+        function getMarketFlag(market) {
+            const flags = { 'A股': '🇨🇳', '港股': '🇭🇰', '美股': '🇺🇸' };
+            return flags[market] || '';
+        }
+        
+        function updateSummary(data) {
+            if (!data || !data.summary) return;
+            
+            const summary = data.summary;
+            document.getElementById('totalAssets').textContent = formatCurrency(summary.totalAssets || 0);
+            document.getElementById('totalValue').textContent = formatCurrency(summary.totalValue || 0);
+            document.getElementById('totalProfit').textContent = formatCurrency(summary.totalProfit || 0);
+            document.getElementById('cashBalance').textContent = formatCurrency(summary.cashBalance || 0);
+            
+            // 设置盈亏颜色
+            const profitElement = document.getElementById('totalProfit');
+            profitElement.className = `summary-value ${(summary.totalProfit || 0) >= 0 ? 'profit-positive' : 'profit-negative'}`;
+            
+            // 统计各市场股票数量
+            if (data.positions) {
+                const marketCounts = { 'A股': 0, '港股': 0, '美股': 0 };
+                data.positions.forEach(pos => {
+                    if (marketCounts.hasOwnProperty(pos.market)) {
+                        marketCounts[pos.market]++;
+                    }
+                });
+                
+                document.getElementById('aStockCount').textContent = marketCounts['A股'];
+                document.getElementById('hkStockCount').textContent = marketCounts['港股'];
+                document.getElementById('usStockCount').textContent = marketCounts['美股'];
+            }
+            
+            // 更新数据状态
+            updateDataStatus(data.positions);
+        }
+        
+        function updateDataStatus(positions) {
+            if (!positions || positions.length === 0) {
+                document.getElementById('dataStatus').textContent = '❌';
+                return;
+            }
+            
+            let hasRealTimeData = 0;
+            let dataErrorCount = 0;
+            
+            positions.forEach(position => {
+                if (position.hasRealTimeData) {
+                    hasRealTimeData++;
+                } else {
+                    dataErrorCount++;
+                }
+            });
+            
+            const statusElement = document.getElementById('dataStatus');
+            if (dataErrorCount === positions.length) {
+                statusElement.textContent = '❌';
+                statusElement.title = '数据获取失败';
+            } else if (dataErrorCount > 0) {
+                statusElement.textContent = '⚠️';
+                statusElement.title = '部分数据异常';
+            } else {
+                statusElement.textContent = '✅';
+                statusElement.title = '数据正常';
+            }
+        }
+        
+        function updateStockTables(data) {
+            if (!data || !data.positions) return;
+            
+            const positions = data.positions;
+            
+            // 更新全部表格
+            updateTable('allStockTableBody', positions, true);
+            
+            // 按市场更新表格
+            const aStocks = positions.filter(p => p.market === 'A股');
+            const hkStocks = positions.filter(p => p.market === '港股');
+            const usStocks = positions.filter(p => p.market === '美股');
+            
+            updateTable('aStockTableBody', aStocks, false);
+            updateTable('hkStockTableBody', hkStocks, false);
+            updateTable('usStockTableBody', usStocks, false);
+        }
+        
+        function updateTable(tableBodyId, positions, showMarket) {
+            const tbody = document.getElementById(tableBodyId);
+            tbody.innerHTML = '';
+            
+            if (positions.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="${showMarket ? 11 : 9}" style="text-align: center; color: #666;">暂无数据</td></tr>`;
+                return;
+            }
+            
+            positions.forEach(position => {
+                const row = document.createElement('tr');
+                const profitClass = position.profit >= 0 ? 'profit-positive' : 'profit-negative';
+                const dataStatusIcon = position.hasRealTimeData ? '✅' : '❌';
+                const dataStatusTitle = position.hasRealTimeData ? '数据正常' : '数据获取失败';
+                
+                let rowHTML = '';
+                
+                if (showMarket) {
+                    rowHTML += `<td>${getMarketFlag(position.market)} ${position.market}</td>`;
+                }
+                
+                rowHTML += `
+                    <td>${position.name}</td>
+                    <td>${position.code}</td>
+                    <td>${formatCurrency(position.currentPrice, position.currency)}</td>
+                    <td class="${profitClass}">${position.change >= 0 ? '+' : ''}${position.change.toFixed(2)}</td>
+                    <td class="${profitClass}">${formatPercent(position.changePercent)}</td>
+                    <td>${position.quantity}</td>
+                    <td>${formatCurrency(position.marketValue, position.currency)}</td>
+                    <td class="${profitClass}">${formatCurrency(position.profit, position.currency)}</td>
+                    <td class="${profitClass}">${formatPercent(position.profitRate)}</td>
+                `;
+                
+                if (showMarket) {
+                    rowHTML += `<td title="${dataStatusTitle}">${dataStatusIcon}</td>`;
+                }
+                
+                row.innerHTML = rowHTML;
+                tbody.appendChild(row);
+            });
+        }
+        
+        function switchMarket(market) {
+            currentMarket = market;
+            
+            // 更新标签状态
+            document.querySelectorAll('.market-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // 显示对应内容
+            document.querySelectorAll('.market-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(market + 'Content').classList.add('active');
+        }
+        
+        async function loadData() {
+            try {
+                showLoading(true);
+                showStatus('正在加载投资组合数据...', 'info');
+                
+                const response = await fetch(`${API_BASE_URL}/portfolio`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    portfolioData = data;
+                    updateSummary(data);
+                    updateStockTables(data);
+                    showStatus(`✅ 数据加载成功 - 更新时间: ${new Date(data.lastUpdate).toLocaleString('zh-CN')}`, 'success');
+                } else {
+                    showStatus(`❌ 数据加载失败: ${data.error}`, 'error');
+                }
+            } catch (error) {
+                console.error('加载数据失败:', error);
+                showStatus(`❌ 网络错误: ${error.message}`, 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+        
+        async function testAPI() {
+            try {
+                showStatus('正在测试API连接...', 'info');
+                
+                const response = await fetch(`${API_BASE_URL}/health`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.status === 'ok') {
+                    showStatus(`✅ API连接正常 - 缓存: ${data.cache_size} 条记录`, 'success');
+                } else {
+                    showStatus('❌ API状态异常', 'error');
+                }
+            } catch (error) {
+                console.error('API测试失败:', error);
+                showStatus(`❌ API连接失败: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testSpecificStock(market, code) {
+            try {
+                showStatus(`正在测试${market}股票 ${code}...`, 'info');
+                
+                const response = await fetch(`${API_BASE_URL}/stock/${market}/${code}`);
+                const data = await response.json();
+                
+                const testDiv = document.getElementById('singleStockTest');
+                const result = document.createElement('div');
+                result.className = 'test-result';
+                
+                if (response.ok && data.success) {
+                    result.className += ' status-success';
+                    result.innerHTML = `✅ ${market.toUpperCase()} ${code}: ${data.data.name} - ${formatCurrency(data.data.price, data.data.currency)}`;
+                } else {
+                    result.className += ' status-error';
+                    result.innerHTML = `❌ ${market.toUpperCase()} ${code}: ${data.error || 'Unknown error'}`;
+                }
+                
+                testDiv.appendChild(result);
+            } catch (error) {
+                showStatus(`❌ 测试${market}股票 ${code}失败: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testAllMarkets() {
+            showStatus('正在测试所有市场数据...', 'info');
+            
+            const testCodes = [
+                { market: 'a', code: '600036', name: '招商银行' },
+                { market: 'hk', code: '0700', name: '腾讯控股' },
+                { market: 'us', code: 'AAPL', name: '苹果' }
+            ];
+            
+            let successCount = 0;
+            const testDiv = document.getElementById('batchTest');
+            testDiv.innerHTML = '';
+            
+            for (const stock of testCodes) {
+                try {
+                    const response = await fetch(`${API_BASE_URL}/stock/${stock.market}/${stock.code}`);
+                    const data = await response.json();
+                    
+                    const result = document.createElement('div');
+                    result.className = 'test-result';
+                    
+                    if (response.ok && data.success) {
+                        result.className += ' status-success';
+                        result.innerHTML = `✅ ${stock.name} (${stock.market.toUpperCase()} ${stock.code}): ${formatCurrency(data.data.price, data.data.currency)}`;
+                        successCount++;
+                    } else {
+                        result.className += ' status-error';
+                        result.innerHTML = `❌ ${stock.name} (${stock.market.toUpperCase()} ${stock.code}): ${data.error || 'Unknown error'}`;
+                    }
+                    
+                    testDiv.appendChild(result);
+                } catch (error) {
+                    const result = document.createElement('div');
+                    result.className = 'test-result status-error';
+                    result.innerHTML = `❌ ${stock.name}: ${error.message}`;
+                    testDiv.appendChild(result);
+                }
+            }
+            
+            showStatus(`📊 测试完成: ${successCount}/${testCodes.length} 个股票数据正常`, successCount === testCodes.length ? 'success' : 'warning');
+        }
+        
+        async function batchTest() {
+            await testAllMarkets();
+        }
+        
+        async function clearCache() {
+            try {
+                showStatus('正在清除缓存...', 'info');
+                
+                const response = await fetch(`${API_BASE_URL}/clear-cache`, {
+                    method: 'POST'
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus('✅ 缓存清除成功', 'success');
+                    // 重新加载数据
+                    setTimeout(loadData, 1000);
+                } else {
+                    showStatus('❌ 缓存清除失败', 'error');
+                }
+            } catch (error) {
+                showStatus(`❌ 清除缓存失败: ${error.message}`, 'error');
+            }
+        }
+        
+        // 页面加载完成后自动初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 完整股票系统测试页面加载完成');
+            
+            // 自动加载数据
+            setTimeout(() => {
+                loadData();
+            }, 500);
+            
+            // 设置默认标签页
+            document.querySelector('.market-tab').click();
+        });
+    </script>
+</body>
+</html>

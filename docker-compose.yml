@@ -1,0 +1,46 @@
+# 股票投资组合管理系统 - 群晖部署版
+# 支持A股、美股实时数据抓取
+
+version: '3.8'
+
+services:
+  # Python Flask API服务
+  stock-api:
+    build: 
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: stock-api
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - CACHE_DURATION=30000
+    restart: unless-stopped
+    volumes:
+      - ./api/logs:/app/logs
+    networks:
+      - stock-network
+
+  # Node.js 前端服务
+  stock-web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: stock-web
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - API_URL=http://stock-api:5000
+    depends_on:
+      - stock-api
+    restart: unless-stopped
+    networks:
+      - stock-network
+
+networks:
+  stock-network:
+    driver: bridge
+
+volumes:
+  stock-data:

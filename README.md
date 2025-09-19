@@ -1,143 +1,182 @@
-# 股票投资组合分析系统
+# 智能投资组合管理系统
 
-## 功能特性
+一个功能完整的股票投资组合管理系统，支持A股、美股、港股实时数据抓取和交易记录管理。
 
-- 📊 自动分析股票投资组合
-- 📈 实时获取港股价格
-- 📧 自动发送分析报告到邮箱
-- ⏰ 定时任务：每天10:00和16:00
-- 💡 提供买卖建议和技术分析
-- 📋 生成Excel格式报告
+## 🚀 功能特点
 
-## 系统要求
+### 📊 实时数据抓取
+- **A股数据**: 支持上海、深圳交易所股票实时价格
+- **美股数据**: 支持NASDAQ、NYSE交易所股票实时价格  
+- **港股数据**: 支持香港交易所股票实时价格
+- **基金数据**: 支持国内基金净值查询
 
-- Python 3.7+
-- pandas, requests, schedule 库
-- Gmail账户和应用程序密码
+### 💼 投资组合管理
+- **持仓管理**: 实时显示持仓股票、基金的市场价值和盈亏情况
+- **交易记录**: 完整的买入、卖出记录管理
+- **自动计算**: 自动计算成本价、盈亏比例、持仓占比
+- **多币种支持**: 支持人民币、美元、港币
 
-## 快速开始
+### 🔧 智能功能
+- **自动获取股票名称**: 输入股票代码自动获取对应名称
+- **手动编辑**: 支持手动修改股票名称和其他信息
+- **数据验证**: 完整的数据验证和错误处理
+- **响应式设计**: 支持桌面端和移动端访问
 
-### 1. 安装依赖
+## 🛠️ 技术栈
+
+- **后端**: Python Flask + 多源数据抓取
+- **前端**: HTML5 + CSS3 + JavaScript (ES6+)
+- **数据源**: 网易财经、腾讯财经、Yahoo Finance等
+- **部署**: 支持Docker容器化部署
+
+## 📦 快速开始
+
+### 本地运行
+
+1. **克隆仓库**
 ```bash
-pip install pandas requests schedule
+git clone <your-repo-url>
+cd stock-portfolio-management-system
 ```
 
-### 2. 运行系统
-
-#### 方式一：直接运行
+2. **安装依赖**
 ```bash
-python3 production_stock_analyzer.py
+pip install -r api/requirements.txt
 ```
 
-#### 方式二：使用启动脚本
+3. **启动API服务器**
 ```bash
-# macOS/Linux
-./start_stock_system.sh
-
-# Windows
-start_stock_system.bat
+cd api
+python app.py
 ```
 
-#### 方式三：系统服务 (Linux)
+4. **启动Web服务器**
 ```bash
-# 复制服务文件
-sudo cp stock-analysis.service /etc/systemd/system/
-
-# 启用服务
-sudo systemctl daemon-reload
-sudo systemctl enable stock-analysis
-sudo systemctl start stock-analysis
+cd web
+python -m http.server 8080
 ```
 
-#### 方式四：Cron任务
+5. **访问系统**
+打开浏览器访问: http://localhost:8080/index.html
+
+### Docker部署
+
 ```bash
-# 添加定时任务
-crontab stock_analysis_cron.txt
+# 构建并启动
+docker-compose up -d
+
+# 访问系统
+http://localhost:8080
 ```
 
-## 配置说明
+## 🌐 云平台部署
 
-### Gmail配置
-系统已预配置Gmail账户：
-- 发件人：zbin523@gmail.com
-- 收件人：zhangbin19850523@163.com
+### 推荐的云平台
 
-### 股票配置
-系统监控以下港股：
-- 腾讯控股 (00700.HK)
-- 中芯国际 (00981.HK)
-- 小米集团-W (01810.HK)
-- 中国人寿 (02628.HK)
-- 美团-W (03690.HK)
-- 新东方-S (09901.HK)
-- 阿里巴巴-W (09988.HK)
+#### 1. **Render.com** (推荐)
+- **免费额度**: Web服务 $0/月
+- **特点**: 支持Python Flask，简单易用
+- **网址**: https://render.com/
 
-## 文件结构
+#### 2. **PythonAnywhere** 
+- **免费额度**: 基础账户免费
+- **特点**: 专为Python应用设计
+- **网址**: https://www.pythonanywhere.com/
 
-```
-├── production_stock_analyzer.py    # 主程序
-├── start_stock_system.sh          # Linux/macOS启动脚本
-├── start_stock_system.bat         # Windows启动脚本
-├── stock-analysis.service         # systemd服务文件
-├── stock_analysis_cron.txt       # Cron任务文件
-├── logs/                         # 日志目录
-├── reports/                       # 报告目录
-└── README.md                     # 说明文档
-```
+#### 3. **Heroku**
+- **免费额度**: 550 dyno小时/月
+- **特点**: 经典PaaS平台
+- **网址**: https://www.heroku.com/
 
-## 定时任务
+### Render.com部署步骤
 
-系统会在每天以下时间自动运行：
-- **10:00** - 上午开盘分析
-- **16:00** - 下午收盘分析
+1. **注册账户**
+   - 访问 https://render.com/
+   - 使用GitHub账户注册
 
-## 邮件报告
+2. **创建新的Web服务**
+   - 点击"New +" → "Web Service"
+   - 连接您的GitHub仓库
+   - 选择您的仓库
 
-每次分析会发送包含以下内容的邮件：
-- 📊 投资组合总览
-- 📈 持仓明细表格
-- 🔍 技术分析
-- 💡 操作建议
-- 📎 Excel格式附件
+3. **配置环境**
+   - **Runtime**: Python 3
+   - **Build Command**: `pip install -r api/requirements.txt`
+   - **Start Command**: `python api/app.py`
+   - **Port**: 5000
 
-## 日志监控
+4. **环境变量** (如果需要)
+   ```bash
+   FLASK_ENV=production
+   ```
 
-- 系统日志：`logs/stock_analysis.log`
-- Cron日志：`logs/cron.log`
+5. **部署**
+   - 点击"Create Web Service"
+   - 等待部署完成
 
-## 故障排除
+## 📱 系统界面
 
-### Gmail发送失败
-1. 检查Gmail应用程序密码是否正确
-2. 确保开启了"不够安全的应用的访问权限"
-3. 检查网络连接
+### 主要功能页面
+- **仪表板**: 总览投资组合表现
+- **持仓管理**: 查看和管理股票/基金持仓
+- **交易记录**: 添加、编辑、删除交易记录
+- **资金管理**: 现金流水记录
 
-### 股票价格获取失败
-1. 检查网络连接
-2. 查看日志文件了解具体错误
-3. 系统会自动重试
+### 交易记录功能
+- ✅ 新建买入/卖出记录
+- ✅ 自动获取股票名称
+- ✅ 手动编辑交易信息
+- ✅ 删除交易记录
+- ✅ 查看交易详情
 
-### 定时任务不执行
-1. 检查系统时间是否正确
-2. 查看日志文件
-3. 手动运行测试：`python3 production_stock_analyzer.py`
+## 🔑 API密钥配置
 
-## 停止系统
+### 可选的数据源API密钥
 
-### 手动运行
-按 `Ctrl+C` 停止程序
+1. **Alpha Vantage** (美股数据)
+   - 注册: https://www.alphavantage.co/support/#api-key
+   - 免费额度: 每日25次调用
+   - 环境变量: `ALPHA_VANTAGE_API_KEY`
 
-### 系统服务
-```bash
-sudo systemctl stop stock-analysis
-```
+2. **TuShare Pro** (A股数据)
+   - 注册: https://tushare.pro/register
+   - 免费额度: 每日100次调用  
+   - 环境变量: `TUSHARE_TOKEN`
 
-### Cron任务
-```bash
-crontab -l  # 查看当前任务
-crontab -r  # 删除所有任务
-```
+## 📝 使用说明
 
-## 技术支持
+### 添加交易记录
+1. 点击"新建买入"按钮
+2. 输入股票代码 (如: 600036)
+3. 选择股票市场 (A股/美股/港股/基金)
+4. 系统自动获取股票名称，也可手动修改
+5. 填写交易数量、价格等信息
+6. 点击确认完成添加
 
-如有问题，请查看日志文件或联系技术支持。
+### 编辑交易记录
+1. 在交易记录列表中点击"编辑"
+2. 修改需要更新的字段
+3. 点击"更新"保存修改
+
+### 查看持仓情况
+- 切换到不同市场标签查看对应持仓
+- 系统自动计算盈亏和持仓占比
+- 实时更新股票价格
+
+## 🤝 贡献
+
+欢迎提交Issue和Pull Request来改进这个项目！
+
+## 📄 许可证
+
+MIT License - 详见 [LICENSE](LICENSE) 文件
+
+## 📞 联系方式
+
+如有问题或建议，请通过以下方式联系：
+- GitHub Issues
+- Email: your-email@example.com
+
+---
+
+**注意**: 本系统仅供学习和研究使用，投资有风险，请谨慎决策。
